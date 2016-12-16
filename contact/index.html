@@ -4,8 +4,13 @@ title: contact
 ---
 Here is a form - you know what to do!
 
-<form method="POST" action="http://formspree.io/mdave3927@gmail.com">
+<form id="contactform" method="POST">
   <input name="name" placeholder="Your name">
   <textarea name="message" placeholder="Your message"></textarea>
+  <input type="text" name="_gotcha" style="display:none" />
   <button type="submit">Send</button>
 </form>
+<script>
+  var cf = document.getElementById('contactform');
+  cf.setAttribute('action', '//' + 'formspree.io' + 'm' + 'dave' + '3927' + '@' + 'gmail' + '.com');
+</script>
