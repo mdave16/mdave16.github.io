@@ -1,3 +1,8 @@
+---
+layout: default
+title: About
+---
+
 ----
 
 >  Interested in **Computational Number Theory**
