@@ -8,10 +8,11 @@ Here is a form - you know what to do!
   <input name="name" placeholder="Your name">
   <textarea name="message" placeholder="Your message"></textarea>
   <input type="text" name="_gotcha" style="display:none" />
-  <input type="hidden" name="_next" value="//mywebsite.com/thanks.html" />
+  <input type="hidden" name="_next" value="javascript:void(alert('THANKS!!'));" />
   <button type="submit">Send</button>
 </form>
 <script>
+  
   var cf = document.getElementById('contactform');
   cf.setAttribute('action', '//' + 'formspree.io/' + 'm' + 'dave' + '3927' + '@' + 'gmail' + '.com');
 </script>
