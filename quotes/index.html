@@ -86,7 +86,53 @@ quotes.push(
 //  {q: "", p: "", t: 2016},
 );
 
-document.getElementById("lab").innerHTML = "List all (" + quotes.length + ")" ;
+document.getElementById("lab").innerHTML = "List all (" + quotes.length + ")";
+
+function talk() {
+	console.log("talking");
+	i = Math.floor(quotes.length * Math.random());
+	v = quotes[i];
+	s = v.q
+	if (v.hasOwnProperty("s")) {
+		s = v.s + " -- " + s;
+	}
+	delete i;
+	quote(s, v.p + " - " + v.t);
+}
+
+function listall() {
+	al = ""
+	for (i in quotes) {
+		v = quotes[i];
+		s = v.q + " -- " + v.p + " - " + v.t;
+		if (v.hasOwnProperty("s")) {
+			s = v.s + " -- " + s;
+		}
+		al += s + "<br><br>"
+	}
+	document.getElementById("all").innerHTML = al;
+
+}
+
+var rqb = document.getElementById("rqb");
+
+$("#rqb").on({
+			click: function () {
+				talk();
+				rqb.innerHTML = "Click me for more, or hover to hide."
+			}
+			, mouseenter: function () {
+				hideall();
+			});
+
+
+$('#all').click(function () {
+	listall();
+	$('#all').css({
+		'font-size': '26px'
+		, 'text-align': 'left'
+	});
+});
 
 function quote(q, p) {
 	d = document;
