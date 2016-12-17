@@ -4,7 +4,7 @@ title: quotes
 ---
 <div style="text-align:center" id="rqb"><button type="button" ;="">Random Quote Button</button></div>
 <div style="text-align:center" id="all"><button type="button" onclick="listall();" id="lab" ;="">List all (72)</button></div>
-
+<div id= dbg></div>
 <script>
 //<!--
 
@@ -88,93 +88,33 @@ quotes.push(
 
 document.getElementById("lab").innerHTML = "List all (" + quotes.length + ")" ;
 
-function talk() {
-    console.log("talking");
-    i = Math.floor(quotes.length*Math.random());
-    v = quotes[i];
-    s = v.q
-    if (v.hasOwnProperty("s")) {
-        s = v.s + " -- " + s;
-    }
-    delete i;
-    quote(s, v.p + " - " + v.t);
-}
-
-function listall() {
-    al = ""
-    for (i in quotes) {
-        v = quotes[i];
-        s = v.q + " -- " + v.p + " - " + v.t;
-        if (v.hasOwnProperty("s")) {
-            s = v.s + " -- " + s;
-        }
-        al += s + "<br><br>"
-    }
-    document.getElementById("all").innerHTML = al;
-
-}
-
-var rqb = document.getElementById("rqb");
-
-/*document.onkeydown = function (e) {
-    if (e.keyCode == 32 || e.keyCode == 0 || e.keycode == 85) {
-        console.log("works");
-        rqb.click();
-    }
-};*/
-
-$( "#rqb" ).on("click", talk);
-
-
-$('#all').click(function() {
-    listall();
-    $('#all').css({
-        'font-size': '26px',
-        'text-align': 'left'
-    });
-});
-
 function quote(q, p) {
 	d = document;
-  
-  /* Don't run if one already open */
-  if (d.getElementById("qb") && (d.getElementById("qb").style.visibility === "visible")) return null;
-  
-  /* Create a dimmed background and show it */
-  if(!d.getElementById("dbg")) {
-  	dbgOb = d.getElementsByTagName("body")[0].appendChild(d.createElement("div"));
-  	dbgOb.id = "dbg";
-  }
-  dbgOb = d.getElementById("dbg");
-  dbgOb.style.visibility = "visible";
-  
-  /* Create the quote box in middle of visible view */
-  if(!d.getElementById("qb")) {
-  	qbOb = dbgOb.appendChild(d.createElement("div"));
-  	qbOb.id = "qb";
-    qq = qbOb.appendChild(d.createElement("h1"));
-  	pp = qbOb.appendChild(d.createElement("p"));
-    btn = qbOb.appendChild(d.createElement("a"));
-  	qq.appendChild(d.createTextNode(q));
-  	pp.appendChild(d.createTextNode(p));
-    btn.id = "cb";
-    btn.href = "#";
-    btn.focus();
-  } else {
-  	qbOb = d.getElementById("qb");
-  	qbOb.style.visibility = "visible";
-    qbOb.getElementsByTagName("h1")[0].innerText = q;
-  	qbOb.getElementsByTagName("p")[0].innerText = p;
-    btn = qbOb.getElementsByTagName("a")[0];
-  }
-  btn.onclick = function() { hideall();return false; }
-  /* when space is pressed close it */
-  /* Currently using a button */
+	
+	/* Create a dimmed background and show it */
+	dbgOb = d.getElementById("dbg");
+	dbgOb.style.visibility = "visible";
+
+	/* Create the quote box in middle of visible view */
+	if (!d.getElementById("qb")) {
+		qbOb = dbgOb.appendChild(d.createElement("div"));
+		qbOb.id = "qb";
+		qq = qbOb.appendChild(d.createElement("h1"));
+		pp = qbOb.appendChild(d.createElement("p"));
+		qq.appendChild(d.createTextNode(q));
+		pp.appendChild(d.createTextNode(p));
+	} else {
+		qbOb = d.getElementById("qb");
+		qbOb.style.visibility = "visible";
+		qbOb.getElementsByTagName("h1")[0].innerText = q;
+		qbOb.getElementsByTagName("p")[0].innerText = p;
+	}
+
 }
 
 function hideall() {
 	document.getElementById("qb").style.visibility = "hidden";
-  document.getElementById("dbg").style.visibility = "hidden";
+	document.getElementById("dbg").style.visibility = "hidden";
 }
 //-->
 </script>
