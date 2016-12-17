@@ -119,9 +119,9 @@ var rqb = document.getElementById("rqb");
 $("#rqb").on({
 	click: function () {
 		talk();
-		rqb.innerHTML = "Click me for more, or hover to hide."
+		rqb.childNodes[0].childNodes[0].nodeValue = "Click me for more, or hover to hide."
 	}
-	, mouseenter: function () {
+	, mouseleave: function () {
 		hideall();
 	}
 });
