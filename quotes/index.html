@@ -117,13 +117,14 @@ function listall() {
 var rqb = document.getElementById("rqb");
 
 $("#rqb").on({
-			click: function () {
-				talk();
-				rqb.innerHTML = "Click me for more, or hover to hide."
-			}
-			, mouseenter: function () {
-				hideall();
-			});
+	click: function () {
+		talk();
+		rqb.innerHTML = "Click me for more, or hover to hide."
+	}
+	, mouseenter: function () {
+		hideall();
+	}
+});
 
 
 $('#all').click(function () {
