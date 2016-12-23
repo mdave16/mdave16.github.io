@@ -59,9 +59,13 @@ code for any purpose.
 
 See projects list below, as well as Github and my website for full CV.
 Coding modules from university:
+
 - MATLAB: 90
+
 - Java: 62.7
+
 - C: 80
+
 - Advanced C: 77
 
 
@@ -69,18 +73,25 @@ Education
 ---------
 
 University of Warwick (Sep 13 -- Jul 17)
-  - **Master of Mathematics**
+
+- **Master of Mathematics**
     Predicted 2:1
 
 Leicester Grammar School (Sep 11 -- Jun 13)
-  - *Maths* - A*
-  - *Further Maths* - A*
-  - *Physics* - A
-  - *STEP I* - 1
-  - *STEP II* - 3
+
+- *Maths* - A*
+
+- *Further Maths* - A*
+
+- *Physics* - A
+
+- *STEP I* - 1
+
+- *STEP II* - 3
 
 St Pauls RC School (Oct 07 -- Jun 11)
-  - 21 Level 2 qualifications from A* - C. Including A* in Maths and C in English.
+
+- 21 Level 2 qualifications from A* - C. Including A* in Maths and C in English.
 
 
 Projects
