@@ -5,12 +5,47 @@ title: CV
 
 ------------------------------------------------------------------------
 
-> Interested in **Computational Number Theory**,
-> **Algebraic Number Theory**, **Algebraic Geometry**
+> Interested in various topics relating to **Computational Number Theory**,
+> **Algebraic Number Theory**, **Algebraic Geometry**.
 
 ------------------------------------------------------------------------
 
+Education
+---------
 
+University of Warwick (Sep 13 -- Jul 17)
+
+- **Master of Mathematics**
+    Predicted 2:1
+
+Leicester Grammar School (Sep 11 -- Jun 13)
+
+- *Maths* - A*
+
+- *Further Maths* - A*
+
+- *Physics* - A
+
+- *STEP I* - 1
+
+St Pauls RC School (Oct 07 -- Jun 11)
+
+- 21 Level 2 qualifications from A* - C. Including A* in Maths and C in English.
+
+Projects
+--------
+
+* 4th year essay on *Holomorphic Dynamics* supervised by **Adam Epstein**.
+
+* URSS about *Computing Bianchi Modular Forms* supervised by **Marc Masdeu**.
+
+* 3rd year essay on *Complex Multiplication* supervised by **Marc Masdeu**.
+
+Contributed Talks
+-----------------
+
+ - (July 16)*Combinatorics*. **Warwick**, with Maths Society.
+ 
 Teaching
 --------
 
@@ -41,7 +76,6 @@ including planning and marking.
   : **St Pauls RC school** (Feb 09 - Jun 12).
 	Tutoring several students one-on-one.
 
-
 Coding
 ------
 
@@ -57,58 +91,14 @@ code for any purpose.
     Including explaining coding concepts to university students,
     teachers and parents.
 
-See projects list below, as well as Github and my website for full CV.
-Coding modules from university:
+See projects list above, as well as Github and my website for full CV.
+Some coding modules from university:
 
 - MATLAB: 90
-
-- Java: 62.7
 
 - C: 80
 
 - Advanced C: 77
-
-
-Education
----------
-
-University of Warwick (Sep 13 -- Jul 17)
-
-- **Master of Mathematics**
-    Predicted 2:1
-
-Leicester Grammar School (Sep 11 -- Jun 13)
-
-- *Maths* - A*
-
-- *Further Maths* - A*
-
-- *Physics* - A
-
-- *STEP I* - 1
-
-- *STEP II* - 3
-
-St Pauls RC School (Oct 07 -- Jun 11)
-
-- 21 Level 2 qualifications from A* - C. Including A* in Maths and C in English.
-
-
-Projects
---------
-
-* 4th year essay on *Holomorphic Dynamics* supervised by **Adam Epstein**.
-
-* URSS about *Computing Bianchi Modular Forms* supervised by **Marc Masdeu**.
-
-* 3rd year essay on *Complex Multiplication* supervised by **Marc Masdeu**.
-
-
-Contributed Talks
------------------
-
- - (July 16)*Combinatorics*. **Warwick**, with Maths Society.
-
 
 Other Information
 -----------------
