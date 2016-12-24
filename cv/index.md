@@ -115,9 +115,11 @@ Other Information
 	* First Aid (St Johns)
 
 * **British Citizen**
+with a full driving licence
 
 * **Post Gold Officer**
 with Warwick Duke of Edinburgh Society (15-17)
+
 ------------------------------------------------------------------------
 
 > <m.dave@warwick.ac.uk> • +44 7887 391 825
