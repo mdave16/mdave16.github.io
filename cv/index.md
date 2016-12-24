@@ -113,8 +113,11 @@ Other Information
 * **First Aid**
 	* Outdoor First Aid (Wilderness Development)
 	* First Aid (St Johns)
+
 * **British Citizen**
-* **Post Gold Officer** with Warwick Duke of Edinburgh Society (15-17)
+
+* **Post Gold Officer**
+with Warwick Duke of Edinburgh Society (15-17)
 ------------------------------------------------------------------------
 
 > <m.dave@warwick.ac.uk> • +44 7887 391 825
