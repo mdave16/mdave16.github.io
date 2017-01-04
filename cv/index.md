@@ -1,8 +1,3 @@
----
-layout: default
-title: CV
----
-
 ------------------------------------------------------------------------
 
 > Interested in various topics relating to **Computational Number Theory**,
