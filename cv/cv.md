@@ -43,6 +43,7 @@ Contributed Talks
 -----------------
 
  - (July 16) *Combinatorics*. **Warwick**, with [Maths Society][_wms].
+ - (Jan 17) *Cones, Wallpaper and Modular Forms*. **Warwick**, with [Maths Society][_wms]
 
 Teaching
 --------
