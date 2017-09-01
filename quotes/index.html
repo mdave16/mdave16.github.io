@@ -2,8 +2,12 @@
 layout: default
 title: quotes
 ---
-<div style="text-align:center" id="rqb"><button type="button" ;="">Random Quote Button</button></div>
-<div style="text-align:center" id="all"><button type="button" onclick="listall();" id="lab" ;="">List all (72)</button></div>
+<div style="text-align:center" id="rqb">
+  <button type="button" ;="">Random Quote Button</button>
+</div>
+<div style="text-align:center" id="all">
+  <button type="button" onclick="listall();" id="lab" ;="">List all (72)</button>
+</div>
 <div id= dbg></div>
 <script>
 //<!--
@@ -92,86 +96,94 @@ quotes.push(
   {q: "If there was a real fire, we were all going to burn here.", p: "Inna Capdeboscq", t: 2017},
   {q: "On a scale of 0 to Lie Algebras, wait that's not how it work", p: "Konstantin Shvydkyy", t: 2017},
   {s: "Mid-explanation of a proof", q: "These are *really* good blackboards", p: "Trevor Wooley", t: 2016},
-  {s: "Asher: The Arctic is melting, which is obviously really bad for the Netherlands.", q: "Well, can't they move to belgium, and noone would know the difference.", p: "Dan Jovic", t: 2017}
-//  {s: "", q: "", p: "", t: 2016},
+  {s: "Asher: The Arctic is melting, which is obviously really bad for the Netherlands.", q: "Well, can't they move to belgium, and noone would know the difference.", p: "Dan Jovic", t: 2017},
+  {q: "In retrospect, I don't know why I thought you'd be juggling.", p: "Tom Hanna", t: 2016},
+  {q: "A little bit sloppy with all the terminology.", p: "Tom Hanna", t: 2016},
+  {q: "Maybe I deserve to be murdered, but please don't kill me.", p: "Tom Hanna", t: 2016},
+  {q: "It's nice to be a mathematician, computers don't generally hurt you much", p: "Louise Dyson", t: 2016},
+  {q: "Define 'define'.", p: "Jun Bo Lau", t: 2016},
+  {s: "Marie: Your maths is gone.", q: "Oh I didn't need it.", p: "Oliver Masters", t: 2017},
+  {q: "If anything, I'll be in prison, so it'll be great!", p: "Chris Hickey", t: 2017},
+  {q: "Dave wood is the most human man in the department, wait no Samir! Actually Samir isn't human, he's a magical pixie.", p: "Asher Pearl", t: 2017},
+  {q: "Take these equations, and then by a miracle, everything works! - Proof by miracle!", p: "Daniel Coutand", t: 2015},
+  {s: "I still don't understand why this is funny.", q: "Oh no! I've just spilled Proseco down my shirt!", p: "Asher Peal", t: 2017}
+   //  {s: "", q: "", p: "", t: 2017},
 );
 
 document.getElementById("lab").innerHTML = "List all (" + quotes.length + ")";
 
 function talk() {
-	console.log("talking");
-	i = Math.floor(quotes.length * Math.random());
-	v = quotes[i];
-	s = v.q
-	if (v.hasOwnProperty("s")) {
-		s = "[" + v.s + "] — " + s;
-	}
-	delete i;
-	quote(s, v.p + " - " + v.t);
+  console.log("talking");
+  i = Math.floor(quotes.length * Math.random());
+  v = quotes[i];
+  s = v.q
+  if (v.hasOwnProperty("s")) {
+    s = "[" + v.s + "] — " + s;
+  }
+  delete i;
+  quote(s, v.p + " - " + v.t);
 }
 
 function listall() {
-	al = ""
-	for (i in quotes) {
-		v = quotes[i];
-		s = v.q + " — " + v.p + " - " + v.t;
-		if (v.hasOwnProperty("s")) {
-			s = v.s + " — " + s;
-		}
-		al += s + "<br><br>"
-	}
-	document.getElementById("all").innerHTML = al;
-
+  al = ""
+  for (i in quotes) {
+    v = quotes[i];
+    s = v.q + " — " + v.p + " - " + v.t;
+    if (v.hasOwnProperty("s")) {
+      s = v.s + " — " + s;
+    }
+    al += s + "<br><br>"
+  }
+  document.getElementById("all").innerHTML = al;
 }
 
 var rqb = document.getElementById("rqb");
 
 $("#rqb").on({
-	click: function () {
-		talk();
-		rqb.childNodes[0].childNodes[0].nodeValue = "Click me for more, or hover to hide."
-	}
-	, mouseleave: function () {
-		hideall();
-	}
+  click: function () {
+    talk();
+    rqb.childNodes[0].childNodes[0].nodeValue = "Click me for more, or hover to hide."
+  }
+  , mouseleave: function () {
+    hideall();
+  }
 });
 
 
 $('#all').click(function () {
-	listall();
-	$('#all').css({
-		'font-size': '26px'
-		, 'text-align': 'left'
-	});
+  listall();
+  $('#all').css({
+    'font-size': '26px'
+    , 'text-align': 'left'
+  });
 });
 
 function quote(q, p) {
-	d = document;
+  d = document;
 	
-	/* Create a dimmed background and show it */
-	dbgOb = d.getElementById("dbg");
-	dbgOb.style.visibility = "visible";
+  /* Create a dimmed background and show it */
+  dbgOb = d.getElementById("dbg");
+  dbgOb.style.visibility = "visible";
 
-	/* Create the quote box in middle of visible view */
-	if (!d.getElementById("qb")) {
-		qbOb = dbgOb.appendChild(d.createElement("div"));
-		qbOb.id = "qb";
-		qq = qbOb.appendChild(d.createElement("h1"));
-		pp = qbOb.appendChild(d.createElement("p"));
-		qq.appendChild(d.createTextNode(q));
-		pp.appendChild(d.createTextNode(p));
-	} else {
-		qbOb = d.getElementById("qb");
-		qbOb.style.visibility = "visible";
-		qbOb.getElementsByTagName("h1")[0].innerText = q;
-		qbOb.getElementsByTagName("p")[0].innerText = p;
-	}
-
+  /* Create the quote box in middle of visible view */
+  if (!d.getElementById("qb")) {
+    qbOb = dbgOb.appendChild(d.createElement("div"));
+    qbOb.id = "qb";
+    qq = qbOb.appendChild(d.createElement("h1"));
+    pp = qbOb.appendChild(d.createElement("p"));
+    qq.appendChild(d.createTextNode(q));
+    pp.appendChild(d.createTextNode(p));
+  } else {
+    qbOb = d.getElementById("qb");
+    qbOb.style.visibility = "visible";
+    qbOb.getElementsByTagName("h1")[0].innerText = q;
+    qbOb.getElementsByTagName("p")[0].innerText = p;
+  }
 }
 
 function hideall() {
-	document.getElementById("qb").style.visibility = "hidden";
-	document.getElementById("dbg").style.visibility = "hidden";
+  document.getElementById("qb").style.visibility = "hidden";
+  document.getElementById("dbg").style.visibility = "hidden";
 }
 //-->
 </script>
