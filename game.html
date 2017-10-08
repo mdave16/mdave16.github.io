@@ -25,9 +25,9 @@ function chatBot(name, colour) {
   this.colour = colour;
   this.respond = function (inp) {
     var table = document.getElementById("chatlog");
-    var newRow = table.insertRow(myTable.rows.length - 1);
-    var newName = row.insertCell(0);
-    var newComment = row.insertCell(1);
+    var newRow = table.insertRow(table.rows.length - 1);
+    var newName = newRow.insertCell(0);
+    var newComment = newRow.insertCell(1);
 
     newName.innerHTML = this.name;
     newComment.innerHTML = inp; 
