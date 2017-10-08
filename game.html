@@ -1,0 +1,29 @@
+---
+layout: default
+title: ChatBot
+---
+
+<table>
+  <thead>
+    <tr>
+      <th> Name </th>
+      <th> Speech </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> Mayur </td>
+      <td> <input type="text" name="speech" id="user_speech"> </td>
+    </tr>
+  </tbody>
+</table>
+
+<script>
+     $("#speech").keypress(function (e) {
+            if (e.keyCode === 13) {
+                alert("Enter was pressed was presses");
+            }
+
+            return false;
+        });
+</script>
