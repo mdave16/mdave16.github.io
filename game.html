@@ -3,7 +3,7 @@ layout: default
 title: ChatBot
 ---
 
-<table>
+<table id="chatlog">
   <thead>
     <tr>
       <th> Name </th>
@@ -19,9 +19,28 @@ title: ChatBot
 </table>
 
 <script>
+  
+function chatBot(name, colour) {
+  this.name = name;
+  this.colour = colour;
+  this.respond = function (in) {
+    var table = document.getElementById("chatlog");
+    var newRow = table.insertRow(myTable.rows.length - 1);
+    var newName = row.insertCell(0);
+    var newComment = row.insertCell(1);
+
+    newName.innerHTML = this.name;
+    newName.innerHTML = in; 
+    console.log(this.name + " says " + in); // build a dictionary and respond from there.
+  }
+}
+  
+var Chatty = new bot("Chatty", blue);
+  
 $("input").on("keydown", function say(e) {
   if (e.keyCode == 13) {
-    alert($(this).val());
+    console.log($(this).val());
+    Chatty.respond($(this).val()); /*put in if/else blocks for which bot should respond*/
   }
 });
   
