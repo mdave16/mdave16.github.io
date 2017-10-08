@@ -23,15 +23,15 @@ title: ChatBot
 function chatBot(name, colour) {
   this.name = name;
   this.colour = colour;
-  this.respond = function (in) {
+  this.respond = function (inp) {
     var table = document.getElementById("chatlog");
     var newRow = table.insertRow(myTable.rows.length - 1);
     var newName = row.insertCell(0);
     var newComment = row.insertCell(1);
 
     newName.innerHTML = this.name;
-    newName.innerHTML = in; 
-    console.log(this.name + " says " + in); // build a dictionary and respond from there.
+    newComment.innerHTML = inp; 
+    console.log(this.name + " says " + inp); // build a dictionary and respond from there.
   }
 }
   
