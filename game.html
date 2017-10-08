@@ -13,17 +13,16 @@ title: ChatBot
   <tbody>
     <tr>
       <td> Mayur </td>
-      <td> <input type="text" name="speech" id="user_speech"> </td>
+      <td> <input type="text" placeholder="Say something!" id="user_speech"/> </td>
     </tr>
   </tbody>
 </table>
 
 <script>
-     $("#user_speech").keypress(function (e) {
-            if (e.keyCode === 13) {
-                alert("Enter was pressed was presses");
-            }
-
-            return false;
-        });
+$("input").on("keydown", function say(e) {
+  if (e.keyCode == 13) {
+    alert($(this).val());
+  }
+});
+  
 </script>
