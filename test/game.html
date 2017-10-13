@@ -1,53 +1,32 @@
 ---
 layout: default
-title: ChatBot
+title: Ludo!
 ---
 
-<table id="chatlog">
-  <thead>
-    <tr>
-      <th> Name </th>
-      <th> Speech </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td> Mayur </td>
-      <td> <input type="text" placeholder="Say something!" id="user_speech"/> </td>
-    </tr>
-  </tbody>
-</table>
+<!-- UI will go here later  -->
+<button id="newgame" onclick="play()" style="text-align:center"
+  >New Game?</button>
+
+<div id="score" style="text-align:center">Winner: Everyone</div>
 
 <script>
-  
-function speak(name, comm) {
-  var table = document.getElementById("chatlog");
-  var newRow = table.insertRow(table.rows.length - 1);
-  var newName = newRow.insertCell(0);
-  var newComment = newRow.insertCell(1);
-  newName.innerHTML = name;
-  newComment.innerHTML = comm;
+
+function Ludo() {
+  return 3 //winner is one of player 1-4
 }
 
-function chatBot(name, colour) {
-  this.name = name;
-  this.colour = colour;
-  this.respond = function (inp) {
-    speak(this.name, inp + "!")
-    console.log(this.name + " says " + inp); // build a dictionary and respond from there.
-  }
+function play() {
+  var game = Ludo();
+  //game should be 1-4
+
+  // this is final part
+  var winner;
+  if (game == 1) { winner = "Red"}
+  else if (game == 2) {winner = "Blue"}
+  else if (game == 3) {winner = "Yellow"}
+  else {winner = "Green"}
+
+  document.getElementById("score").innterHTML = "Winner: " + winner + "!";
 }
-  
-var Chatty = new chatBot("Chatty", "blue");
-speak("Chatty", "Hi! I'm your chatBot")
-  
-$("input").on("keydown", function say(e) {
-  if (e.keyCode == 13) {
-    var comm = $(this).val();
-    console.log(comm);
-    speak("Mayur", comm)
-    Chatty.respond(comm); /*put in if/else blocks for which bot should respond*/
-  }
-});
-  
+
 </script>
