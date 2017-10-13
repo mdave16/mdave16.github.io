@@ -12,8 +12,8 @@ title: Bored?
   <a id="tree" href="#" 
    onmouseover="document.getElementById('desc').style.display = 'block';"
    onmouseout="document.getElementById('desc').style.display='none'">
-  
-  <img src="./static/img/Tree.jpg" alt="Gandalf awaits..." align="middle"></a>
+
+  <img src="/images/Tree.jpg" alt="Gandalf awaits..." align="middle"></a>
   <br>
   <p id="desc" style="display:none;">What are you waiting for?! Your adventure awaits!</p>
 </div>
@@ -78,14 +78,12 @@ function bored() {
     /*want text and link to change*/
 
     ln2 = Math.floor(Math.random() * link.length);
-    while(ln == ln2)
-    {
+    while(ln == ln2) {
         ln2 = Math.floor(Math.random() * link.length);
     }
 
     tn2 = Math.floor(Math.random() * text.length);
-    while(tn == tn2)
-    {
+    while(tn == tn2) {
         tn2 = Math.floor(Math.random() * text.length);
     }
 
