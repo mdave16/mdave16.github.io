@@ -4,13 +4,14 @@ title: Ludo!
 ---
 
 <!-- UI will go here later  -->
-<button id="newgame" onclick="play()" style="text-align:center"
+<button id="newgame" style="text-align:center"
   >New Game?</button>
 
 <div id="score" style="text-align:center">Winner: Everyone</div>
 
 <script>
-
+// think about the object heirarchy of Ludo, want each player to be an object?
+// think about coding downwards...
 function Ludo() {
   return 3 //winner is one of player 1-4
 }
@@ -24,9 +25,11 @@ function play() {
   if (game == 1) { winner = "Red"}
   else if (game == 2) {winner = "Blue"}
   else if (game == 3) {winner = "Yellow"}
-  else {winner = "Green"}
+  else {winner = "Green"};
 
-  document.getElementById("score").innterHTML = "Winner: " + winner + "!";
+  document.getElementById("score").innerHTML = "Winner: " + winner + "!";
 }
+
+document.getElementById('newgame').addEventListener('click', play)
 
 </script>
