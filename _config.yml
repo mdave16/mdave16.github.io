@@ -21,9 +21,6 @@ kramdown:
   syntax_highlighter: rouge
   syntax_highlighter_opts:
     css_class: 'highlight'
-plug-ins:
-  - jekyll-sitemap
-  - jekyll-feed
 
 # Exclude these files from your production _site
 exclude:
