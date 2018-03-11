@@ -1,5 +1,7 @@
 # mdave16.github.io
-Following the "http://jmcglone.com/guides/github-pages/" guide.
+Initially built following the "http://jmcglone.com/guides/github-pages/" guide.
+Since then I've decided to learn more about jekyll and build the website without
+any extras.
 
 Final website "http://mdave16.github.io/"!
 
