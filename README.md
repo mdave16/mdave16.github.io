@@ -9,4 +9,4 @@ run  `bundle install`
 # running locally!
 run `bundle exec jekyll serve`
 
-and preview the site at [http://localhost:4000](http://localhost::4000]
+and preview the site at [http://localhost:4000](http://localhost::4000)
