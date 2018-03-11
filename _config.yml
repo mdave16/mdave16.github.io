@@ -1,5 +1,30 @@
+# site settings
+# access via {{ site.name }}
 name: Mayur Dave
-markdown: kramdown
+author: Mayur Dave
+title: mdave16
+description: A bunch of stuff that I think is cool!
+url: http://mdave16.github.io
+avatar: https://avatars.githubusercontent.com/mdave16
+twitter: mdave248
+email: mdave3927@gmail.com
+github: mdave16
+linkedin: mayur-dave-b058179a
+stackoverflow: users/4400874/mdave16
+rss: feed.xml
+
 permalink: /blog/:year/:month/:day/:title
 
-theme: jekyll-theme-slate
+# build settings
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+
+# Exclude these files from your production _site
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md

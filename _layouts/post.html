@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<h1>{{ page.title }}</h1>
+<p class="meta">{{ page.date | date_to_string }}</p>
+
+<nav><ul>
+	<li><a href="/">Home</a></li>
+	<li><a href="/blog">Blog</a><li>
+	<li><a href="/feed">Feed</a><li>
+</ul></nav>
+
+<div class="post">
+	{{ content }}
+</div>
+
+<footer>
+	{%- include footer.html -%}
+</footer>
