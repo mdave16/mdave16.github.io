@@ -15,16 +15,4 @@ rss: feed.xml
 
 permalink: /blog/:year/:month/:day/:title
 
-# build settings
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    css_class: 'highlight'
-
-# Exclude these files from your production _site
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
-  - README.md
+theme: jekyll-theme-slate
