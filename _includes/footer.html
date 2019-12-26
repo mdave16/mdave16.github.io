@@ -1,41 +1,23 @@
-<div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">
-              {{ site.author }}
-          </li>
-          <li>
-            <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a>
-          </li>
-          <li>
-            <a href="/contact">Leave Feedback</a>
-          </li>
-        </ul>
-</div>
-<div>
-  <ul class="social-media-list">
-    <li>
-      <a href="https://github.com/{{ site.github | cgi_escape | escape }}">
-        <svg class="svg-icon"><use xlink:href="{{ '/images/minima-social-icons.svg#github' }}"></use></svg>
-        <span class="username">{{ site.github| escape }}</span>
-      </a>
-    </li>
-    <li>
-      <a href="https://www.linkedin.com/in/{{ site.linkedin | cgi_escape | escape }}">
-        <svg class="svg-icon"><use xlink:href="{{ '/images/minima-social-icons.svg#linkedin' }}"></use></svg>
-        <span class="username">{{ site.linkedin | escape }}</span>
-      </a>
-    </li>
-    <li>
-      <a href="https://www.twitter.com/{{ site.twitter | cgi_escape | escape }}">
-        <svg class="svg-icon"><use xlink:href="{{ '/images/minima-social-icons.svg#twitter' }}"></use></svg>
-        <span class="username">{{ site.twitter | escape }}</span>
-      </a>
-    </li>
-    <li>
-      <a href="{{ '/feed.xml' }}">
-        <svg class="svg-icon"><use xlink:href="{{ '/images/minima-social-icons.svg#rss' }}"></use></svg>
-        <span>{{ site.rss | escape }}</span>
-      </a>
-    </li>
-  </ul>
-</div>
+<footer>
+  <div class="row">
+    <a class="three columns" href="/contact">Leave Feedback</a>
+    <a class="three columns" href="https://github.com/{{ site.github | cgi_escape | escape }}">
+      <svg class="svg-icon">
+        <use xlink:href="{{ '/images/minima-social-icons.svg#github' }}"></use>
+      </svg>
+      <span class="username">{{ site.github| escape }}</span>
+    </a>
+    <a  class="three columns" href="https://www.linkedin.com/in/{{ site.linkedin | cgi_escape | escape }}">
+      <svg class="svg-icon">
+        <use xlink:href="{{ '/images/minima-social-icons.svg#linkedin' }}"></use>
+      </svg>
+      <span class="username">{{ site.linkedin | escape }}</span>
+    </a>
+    <a class="three columns" href="https://www.twitter.com/{{ site.twitter | cgi_escape | escape }}">
+      <svg class="svg-icon">
+        <use xlink:href="{{ '/images/minima-social-icons.svg#twitter' }}"></use>
+      </svg>
+      <span class="username">{{ site.twitter | escape }}</span>
+    </a>
+  </div>
+</footer>
