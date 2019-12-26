@@ -2,19 +2,19 @@
 layout: default
 title: contact
 ---
-Here is a form - you know what to do!
-
-<form id="contactform" method="POST">
-  <input name="name" placeholder="Your name"> <br>
-  <textarea name="message" placeholder="Your message"></textarea> <br>
+<form method="POST" action="https://formspree.io/{{ site.email }}">
+  <div class="row">
+    <div class="twelve columns">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name">
+    </div>
+  </div>
+  <div class="row">
+    <div class="twelve columns">
+      <label for="message">Message</label>
+      <textarea class="u-full-width" id="message" name="message" placeholder="Your message"></textarea>
+    </div>
+  </div>
   <input type="text" name="_gotcha" style="display:none" />
-  <button type="submit">Send</button>
+  <input  class="button-primary" type="submit" value="Send">
 </form>
-<script>
-
-var cf = document.getElementById('contactform');
-cf.setAttribute('action', '//' + 'formspree.io/' + 'm' + 'dave' + '3927' + '@' + 'gmail' + '.com');
-$("#submit").click(function(){
-      alert("Thanks!!");
-  });
-</script>
