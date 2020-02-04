@@ -13,7 +13,7 @@ title: ChatBot
   <tbody>
     <tr>
       <td> Mayur </td>
-      <td> <input type="text" placeholder="Say something!" id="user_speech"/> </td>
+      <td> <input type="text" placeholder="Say something!" id="userSpeech"/> </td>
     </tr>
   </tbody>
 </table>
@@ -40,14 +40,14 @@ function chatBot(name, colour) {
 
 var Chatty = new chatBot("Chatty", "blue");
 speak("Chatty", "Hi! I'm your chatBot")
-
-$("input").on("keydown", function say(e) {
-  if (e.keyCode == 13) {
-    var comm = $(this).val();
-    console.log(comm);
-    speak("Mayur", comm)
-    Chatty.respond(comm); /*put in if/else blocks for which bot should respond*/
-  }
+const input = document.getElementById("userSpeech");
+input.addEventListener("keyup", function(event) {
+    if (event.key === "Enter") {
+			var comm = event.target.value
+			console.log(comm);
+			speak("Mayur", comm)
+			Chatty.respond(comm);
+    }
 });
 
 </script>
