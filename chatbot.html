@@ -29,16 +29,15 @@ function speak(name, comm) {
   newComment.innerHTML = comm;
 }
 
-function chatBot(name, colour) {
+function chatBot(name) {
   this.name = name;
-  this.colour = colour;
   this.respond = function (inp) {
     speak(this.name, inp + "!")
     console.log(this.name + " says " + inp); // build a dictionary and respond from there.
   }
 }
 
-var Chatty = new chatBot("Chatty", "blue");
+var Chatty = new chatBot("Chatty");
 speak("Chatty", "Hi! I'm your chatBot")
 
 const input = document.getElementById("userSpeech");
