@@ -19,38 +19,44 @@ title: ChatBot
 </table>
 
 <script>
-let	userName = "Mayur"
-document.getElementById("userName").innerHTML = userName;
-
-function speak(name, comm) {
-  var table = document.getElementById("chatlog");
-  var newRow = table.insertRow(table.rows.length - 1);
-  var newName = newRow.insertCell(0);
-  var newComment = newRow.insertCell(1);
+const speak = (name, comm) => {
+  const table = document.getElementById("chatlog");
+  const newRow = table.insertRow(table.rows.length - 1);
+  const newName = newRow.insertCell(0);
+  const newComment = newRow.insertCell(1);
   newName.innerHTML = name;
   newComment.innerHTML = comm;
 }
+
+let userName = "User"
+
+const setUserName = (name) => {
+	userName = name
+	document.getElementById("userName").innerHTML = name
+}
+
+setUserName("User")
 
 function chatBot(name) {
   this.name = name;
   this.respond = function (inp) {
 		if(inp.toLowerCase().startsWith("my name is")) {
-			userName = inp.split(" ")[3]
-			document.getElementById("userName").innerHTML = userName;
-			speak(this.name, "Nice to meet you " + userName )
+			let name = inp.split(" ")[3]
+			setUserName(name)
+			speak(this.name, "Nice to meet you " + name + ".")
 		} else {
       speak(this.name, inp + " to you too!" )
 	  }
   }
 }
 
-var Chatty = new chatBot("Chatty");
+const Chatty = new chatBot("Chatty");
 speak("Chatty", "Hi! I'm your chatBot")
 
 const input = document.getElementById("userSpeech");
 input.addEventListener("keyup", function(event) {
     if (event.key === "Enter") {
-			var comm = event.target.value
+			const comm = event.target.value
 			input.value = ''
 			speak(userName, comm)
 			Chatty.respond(comm);
