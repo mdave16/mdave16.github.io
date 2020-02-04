@@ -12,13 +12,15 @@ title: ChatBot
   </thead>
   <tbody>
     <tr>
-      <td> Mayur </td>
+      <td> <p id="userName"></p> </td>
       <td> <input type="text" placeholder="Say something!" id="userSpeech"/> </td>
     </tr>
   </tbody>
 </table>
 
 <script>
+let	userName = "Mayur"
+document.getElementById("userName").innerHTML = userName;
 
 function speak(name, comm) {
   var table = document.getElementById("chatlog");
@@ -32,8 +34,13 @@ function speak(name, comm) {
 function chatBot(name) {
   this.name = name;
   this.respond = function (inp) {
-    speak(this.name, inp + "!")
-    console.log(this.name + " says " + inp); // build a dictionary and respond from there.
+		if(inp.toLowerCase().startsWith("my name is")) {
+			userName = inp.split(" ")[3]
+			document.getElementById("userName").innerHTML = userName;
+			speak(this.name, "Nice to meet you " + userName )
+		} else {
+      speak(this.name, inp + " to you too!" )
+	  }
   }
 }
 
@@ -45,7 +52,7 @@ input.addEventListener("keyup", function(event) {
     if (event.key === "Enter") {
 			var comm = event.target.value
 			input.value = ''
-			speak("Mayur", comm)
+			speak(userName, comm)
 			Chatty.respond(comm);
     }
 });
