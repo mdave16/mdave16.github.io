@@ -19,7 +19,7 @@ title: ChatBot
 </table>
 
 <script>
-  
+
 function speak(name, comm) {
   var table = document.getElementById("chatlog");
   var newRow = table.insertRow(table.rows.length - 1);
@@ -37,10 +37,10 @@ function chatBot(name, colour) {
     console.log(this.name + " says " + inp); // build a dictionary and respond from there.
   }
 }
-  
+
 var Chatty = new chatBot("Chatty", "blue");
 speak("Chatty", "Hi! I'm your chatBot")
-  
+
 $("input").on("keydown", function say(e) {
   if (e.keyCode == 13) {
     var comm = $(this).val();
@@ -49,5 +49,5 @@ $("input").on("keydown", function say(e) {
     Chatty.respond(comm); /*put in if/else blocks for which bot should respond*/
   }
 });
-  
+
 </script>
