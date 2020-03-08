@@ -1,0 +1,90 @@
+---
+layout: default
+title: Tic Tac Toe
+---
+
+<style>
+  .grid-container {
+    display: grid;
+    grid-template-columns: 32.5% 32.5% 32.5%;
+    grid-template-rows: 104px 104px 104px;
+    background-color: #2196f3;
+    padding: 10px;
+    grid-gap: 10px;
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 4rem;
+    text-align: center;
+  }
+</style>
+<div class="grid-container" id="grid">
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+</div>
+
+<script>
+  let player = "X"
+  const winningCombos = [
+    // horizontal
+    [0, 1, 2],
+    [3, 4, 5],
+    [6, 7, 8],
+    // vertical
+    [0, 3, 6],
+    [1, 4, 7],
+    [2, 5, 8],
+    //diagonal
+    [0, 4, 8],
+    [2, 4, 6]
+  ]
+  const cells = () => Array.from(document.getElementsByClassName("grid-item"))
+  const winner = () => {
+    const grid = cells().map(cell => cell.innerText)
+    const combo = winningCombos.filter(
+      combo =>
+        grid[combo[0]] === grid[combo[1]] &&
+        grid[combo[0]] === grid[combo[2]] &&
+        grid[combo[0]] !== ""
+    )
+    return combo.length > 0 ? grid[combo[0][0]] : false
+  }
+  const reset = () => cells().forEach(cell => (cell.innerText = ""))
+  const play = cell => {
+    if (cell.innerText !== "") {
+      return null
+    }
+
+    cell.innerText = player
+
+    let w = winner()
+    if (w) {
+      alert(`Congratulations! The winner is: ${w}.`)
+      reset()
+    }
+
+    const over = cells()
+      .map(c => c.innerText)
+      .every(c => c !== "")
+    if (over) {
+      alert("Game is over. Try again!")
+      reset()
+    }
+
+    player = player === "X" ? "O" : "X"
+  }
+
+  document.addEventListener("DOMContentLoaded", _ => {
+    document
+      .getElementById("grid")
+      .addEventListener("click", e => play(e.target))
+  })
+</script>
