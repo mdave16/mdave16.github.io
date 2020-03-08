@@ -68,8 +68,7 @@ title: Tic Tac Tic Tac Toe
 			if (
 				lastCellPlayed &&
 				Array.from(
-					document.getElementsByClassName("box " + lastCellPlayed)[0]
-						.children
+					document.getElementsByClassName("box " + lastCellPlayed)[0].children
 				)
 					.map(c => c.innerText)
 					.indexOf("") > -1
