@@ -1,157 +1,90 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Tic Tac Tic Tac Toe</title>
+	<title>Tic Tac Tic Tac Toe</title>
 	<!-- link to main stylesheet -->
 	<link rel="stylesheet" type="text/css" href="/css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="/css/skeleton.css">
 	<link rel="stylesheet" type="text/css" href="/css/main.css">
-    <link rel="shortcut icon" href="/images/tree.ico" />
-    <style>
-        .grid {
-          display: grid;
-          grid-template-columns: auto auto auto;
-          grid-template-rows: auto auto auto;
-          background-color: #2196f3;
-          padding: 10px;
-          grid-gap: 5px;
-        }
-        .box {
-          display: grid;
-          grid-template-columns: auto auto auto;
-          grid-template-rows: 3rem 3rem 3rem;
-          line-height: 3rem;
-          background-color: #03243fc7;
-          padding: 5px;
-          grid-gap: 5px;
-        }
-        .cell {
-          background-color: rgba(255, 255, 255, 0.8);
-          font-size: 1rem;
-          text-align: center;
-        }
-      </style>
-      
+	<link rel="shortcut icon" href="/images/tree.ico" />
+	<style>
+		.grid {
+			display: grid;
+			grid-template-columns: auto auto auto;
+			grid-template-rows: auto auto auto;
+			background-color: #2196f3;
+			padding: 10px;
+			grid-gap: 5px;
+		}
+
+		.box {
+			display: grid;
+			grid-template-columns: auto auto auto;
+			grid-template-rows: 3rem 3rem 3rem;
+			line-height: 3rem;
+			background-color: #03243fc7;
+			padding: 5px;
+			grid-gap: 5px;
+		}
+
+		.cell {
+			background-color: rgba(255, 255, 255, 0.8);
+			font-size: 1rem;
+			text-align: center;
+		}
+	</style>
+
 </head>
+
 <body>
-<div class="grid" id="grid">
-  <div class="box">
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-  </div>
-  <div class="box">
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-  </div>
-  <div class="box">
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-  </div>
-  <div class="box">
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-  </div>
-  <div class="box">
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-  </div>
-  <div class="box">
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-  </div>
-  <div class="box">
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-  </div>
-  <div class="box">
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-  </div>
-  <div class="box">
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-  </div>
-</div>
+	<script>
+		let player = "X"
 
-<script>
-  let player = "X"
-  const play = cell => {
-    if (cell.innerText !== "" || cell.className !== "cell") {
-      return null
-    }
-    cell.innerText = player
+		const play = cell => {
+			// check move is valid
+			if (cell.innerText !== "" || cell.className !== "cell") {
+				return null
+			}
+			// play
+			cell.innerText = player
+			// check for end conditions
 
-    player = player === "X" ? "O" : "X" 
-  }
+			// change player
+			// player = player === "X" ? "O" : "X" 
+		}
 
-  document.addEventListener("DOMContentLoaded", _ => {
-    document
-      .getElementById("grid")
-      .addEventListener("click", e => play(e.target))
-  })
-</script>
+		const createGrid = () => {
+			const createDiv = (size, direction) => {
+				div = document.createElement("div")
+				div.classList.add(size)
+				div.classList.add(direction)
+				return div
+			}
+			const directions = [
+				"top-right", "top-middle", "top-left",
+				"middle-right", "middle-middle", "middle-left",
+				"bottom-right", "bottom-middle", "bottom-left"
+			]
+			grid = document.createElement("div")
+			grid.classList.add('grid')
+			grid.id = 'grid'
+			directions.map(x => createDiv("box", x))
+				.map(box => {
+					directions.map(y => createDiv('cell', y))
+						.forEach(cell => box.appendChild(cell))
+					return box
+				}).forEach(box => grid.appendChild(box))
+
+
+			document.body.appendChild(grid)
+		}
+
+		createGrid()
+		document
+			.getElementById("grid")
+			.addEventListener("click", e => play(e.target))
+	</script>
 </body>
+
 </html
