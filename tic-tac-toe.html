@@ -55,7 +55,7 @@ title: Tic Tac Toe
 				grid[combo[0]] === grid[combo[2]] &&
 				grid[combo[0]] !== ""
 		)
-		return combo.length > 0 ? grid[combo[0][0]] : false
+		return combo.length > 0
 	}
 	const reset = () => cells().forEach(cell => (cell.innerText = ""))
 	const play = cell => {
@@ -65,9 +65,9 @@ title: Tic Tac Toe
 
 		cell.innerText = player
 
-		let w = winner()
-		if (w) {
-			alert(`Congratulations! The winner is: ${w}.`)
+		
+		if (winner()) {
+			alert(`Congratulations! The winner is: ${player}.`)
 			reset()
 		}
 
