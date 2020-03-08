@@ -65,7 +65,7 @@ title: Tic Tac Toe
 
 		cell.innerText = player
 
-		
+
 		if (winner()) {
 			alert(`Congratulations! The winner is: ${player}.`)
 			reset()
@@ -75,7 +75,7 @@ title: Tic Tac Toe
 			.map(c => c.innerText)
 			.every(c => c !== "")
 		if (over) {
-			alert("Game is over. Try again!")
+			alert("Game over. Try again.")
 			reset()
 		}
 
