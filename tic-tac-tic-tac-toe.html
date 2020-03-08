@@ -40,18 +40,27 @@
 <body>
 	<script>
 		let player = "X"
-
+		let lastCellPlayed = "box"
 		const play = cell => {
 			// check move is valid
-			if (cell.innerText !== "" || cell.className !== "cell") {
+			if (cell.innerText !== "" || !cell.classList.contains("cell")) {
 				return null
+			}
+
+			if (!cell.parentElement.classList.contains(lastCellPlayed)) {
+				// not correct box
+				if (Array.from(document.getElementsByClassName("box " + lastCellPlayed)[0].children).map(c => c.innerText).indexOf("") > -1){
+					//correct box is not full
+					return null
+				}
 			}
 			// play
 			cell.innerText = player
+			lastCellPlayed = cell.classList[1]
 			// check for end conditions
 
 			// change player
-			// player = player === "X" ? "O" : "X" 
+			player = player === "X" ? "O" : "X" 
 		}
 
 		const createGrid = () => {
