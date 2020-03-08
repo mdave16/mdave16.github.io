@@ -243,7 +243,6 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  nokogiri (>= 1.8.5)
 
 BUNDLED WITH
    1.16.1
