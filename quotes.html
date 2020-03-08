@@ -8,14 +8,21 @@ title: Quotes
 		<button type="button" onclick="talk();">Random Quote</button>
 	</div>
 	<div class="six columns">
-		<button class="u-pull-right" type="button" onclick="listall();" id="list-all-button">List all</button>
+    <button
+      class="u-pull-right"
+      type="button"
+      onclick="listall();"
+      id="list-all-button"
+    >
+      List all
+    </button>
 	</div>
 </div>
 <div class="row">
 	<div class="twelve columns" id="content"></div>
 </div>
 <script>
-  var quotes = [];
+  var quotes = []
   quotes.push(
     {q: "Hmmm... thinking required [after a bit] Hmmm.... much much thinking required", p: "Mark Pollicott", t: 2014},
     {s: "In response to 'What's your website?'", q: "I'm not sure, I just google my name when I want to find it.", p: "Damiano Testa" , t: 2014},
@@ -110,23 +117,26 @@ title: Quotes
     {q: "Take these equations, and then by a miracle, everything works! - Proof by miracle!", p: "Daniel Coutand", t: 2015},
     {s: "I still don't understand why this is funny.", q: "Oh no! I've just spilled Proseco down my shirt!", p: "Asher Peal", t: 2017}
      //  {s: "", q: "", p: "", t: 2017},
-  );
+  )
 
-  document.getElementById("list-all-button").innerHTML = "List all (" + quotes.length + ")";
+  document.getElementById("list-all-button").innerHTML =
+    "List all (" + quotes.length + ")"
 
   function talk() {
 		var content = document.getElementById("content")
 		var updated = content.cloneNode(false)
 		var quote = quotes[Math.floor(quotes.length * Math.random())]
 		var title = document.createElement("h1")
-		title.innerText = quote.hasOwnProperty("s") ? "[" + quote.s + "] — " + quote.q :quote.q
+    title.innerText = quote.hasOwnProperty("s")
+      ? "[" + quote.s + "] — " + quote.q
+      : quote.q
 		var person = document.createElement("p")
 		person.innerText = quote.p + " - " + quote.t
 
 		updated.appendChild(title)
 		updated.appendChild(person)
 
-		content.parentNode.replaceChild(updated, content);
+    content.parentNode.replaceChild(updated, content)
   }
 
   function listall() {
@@ -136,12 +146,19 @@ title: Quotes
 
     for (quote of quotes) {
 			var item = document.createElement("li")
-			item.innerText = (quote.hasOwnProperty("s") ? "[" + quote.s + "] — " + quote.q :quote.q) + " - " + quote.p + " - " + quote.t
+      item.innerText =
+        (quote.hasOwnProperty("s")
+          ? "[" + quote.s + "] — " + quote.q
+          : quote.q) +
+        " - " +
+        quote.p +
+        " - " +
+        quote.t
 			ul.appendChild(item)
     }
 
 		updated.appendChild(ul)
 
-		content.parentNode.replaceChild(updated, content);
+    content.parentNode.replaceChild(updated, content)
   }
 </script>
