@@ -13,6 +13,9 @@ linkedin: mayur-dave-b058179a
 stackoverflow: users/4400874/mdave16
 rss: feed.xml
 
+author:
+  twitter: mdave248
+
 permalink: /blog/:year/:month/:day/:title
 
 # build settings
@@ -26,11 +29,3 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jemoji
-
-# Exclude these files from your production _site
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
-  - README.md
-  - vendor
