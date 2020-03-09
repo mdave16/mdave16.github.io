@@ -13,55 +13,18 @@ nav ul li:hover, footer ul li:hover {
 	color: #999
 }
 
-/* body {
-	margin: 60px auto;
-	width: 70%;
-}
-
-
-
-a {
-	text-decoration: none;
-	color: #999;
-}
-
-a:hover {
-	text-decoration: unlerline;
-}
-
-h1 {
-	font-size: 3em;
-}
-
-p {
-	font-size: 1.5em;
-	line-height: 1.4em;
-	color: #333;
-}
-
-ul {
-	line-height: 1.4em;
-	color: #333;
-}
-
-footer {
-	border-top: 1px solid #d5d5d5;
-	font-size: .8em;
-}
-
-ul.posts {
-	margin: 20px auto 40px;
-	font-size: 1.5em;
-}
-
-ul.posts li {
-	list-style: none
-} */
-
 .svg-icon {
     width: 16px;
     height: 16px;
     display: inline-block;
     padding-right: 5px;
     vertical-align: text-top;
+}
+
+.intro {
+	text-align: center;
+}
+
+.hidden {
+	display: none;
 }
