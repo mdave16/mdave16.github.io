@@ -23,7 +23,9 @@ title: Tic Tac Toe
 	<h2 id="title">Tic Tac Toe</h2>
 	<p id="info">Current player: X</p>
 	<p id="score">Current score: X: 0 - O: 0</p>
-	<button class="button-primary hidden" id="reset-button" onclick="reset()">Reset</button>
+	<button class="button-primary hidden" id="reset-button" onclick="reset()">
+		Reset
+	</button>
 </section>
 
 <div class="grid" id="grid">
@@ -75,26 +77,27 @@ title: Tic Tac Toe
 		}
 
 		cell.innerText = player
-
-		if (winner()) {
-			alert(`Congratulations! The winner is: ${player}.`)
-			document.getElementById("reset-button").classList.toggle("hidden")
-			document.getElementById("info").innerText = `Congratulations! The winner is: ${player}.`
-			score[player]++
-			document.getElementById('score').innerText = `Current score: X: ${score['X']} - O: ${score['O']}`
-		}
-
 		const over = cells()
 			.map(c => c.innerText)
 			.every(c => c !== "")
-		if (over) {
+		if (winner()) {
+			alert(`Congratulations! The winner is: ${player}.`)
+			document.getElementById("reset-button").classList.toggle("hidden")
+			document.getElementById(
+				"info"
+			).innerText = `Congratulations! The winner is: ${player}.`
+			score[player]++
+			document.getElementById(
+				"score"
+			).innerText = `Current score: X: ${score["X"]} - O: ${score["O"]}`
+		} else if (over) {
 			alert("Game over. Try again.")
 			document.getElementById("reset-button").classList.toggle("hidden")
 			document.getElementById("info").innerText = `Game over. Try again.`
+		} else {
+			player = player === "X" ? "O" : "X"
+			document.getElementById("info").innerText = `Current player: ${player}`
 		}
-
-		player = player === "X" ? "O" : "X"
-		document.getElementById("info").innerText = `Current player: ${player}`
 	}
 
 	document.addEventListener("DOMContentLoaded", _ => {
