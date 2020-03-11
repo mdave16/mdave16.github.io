@@ -85,7 +85,6 @@ title: Tic Tac Toe
 		cell.innerText = player
 
 		if (winner()) {
-			alert(`Congratulations! The winner is: ${player}.`)
 			document.getElementById("reset-button").classList.toggle("hidden")
 			document.getElementById(
 				"info"
@@ -94,10 +93,11 @@ title: Tic Tac Toe
 			document.getElementById(
 				"score"
 			).innerText = `Current score: X: ${score["X"]} - O: ${score["O"]}`
+			alert(`Congratulations! The winner is: ${player}.`)
 		} else if (over()) {
-			alert("Game over. Try again.")
 			document.getElementById("reset-button").classList.toggle("hidden")
 			document.getElementById("info").innerText = `Game over. Try again.`
+			alert("Game over. Try again.")
 		} else {
 			player = player === "X" ? "O" : "X"
 			document.getElementById("info").innerText = `Current player: ${player}.`
