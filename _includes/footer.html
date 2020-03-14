@@ -1,33 +1,43 @@
 <footer>
 	<div class="row">
-		<a class="three columns" href="/contact">Leave Feedback</a>
+		<a class="two columns" href="/contact">Leave Feedback</a>
 		<a
-			class="three columns"
-			href="https://github.com/{{ site.github | cgi_escape | escape }}"
+			class="two columns"
+			href="https://github.com/{{ site.author.github | cgi_escape | escape }}"
 		>
-			<svg class="svg-icon">
+			<svg class="svg-icon" role="img" aria-label="github">
 				<use
 					xlink:href="{{ '/assets/images/minima-social-icons.svg#github' }}"
 				></use>
 			</svg>
 		</a>
 		<a
-			class="three columns"
-			href="https://www.linkedin.com/in/{{ site.linkedin | cgi_escape | escape }}"
+			class="two columns"
+			href="https://www.linkedin.com/in/{{ site.author.linkedin | cgi_escape | escape }}"
 		>
-			<svg class="svg-icon">
+			<svg class="svg-icon" role="img" aria-label="linkedin">
 				<use
 					xlink:href="{{ '/assets/images/minima-social-icons.svg#linkedin' }}"
 				></use>
 			</svg>
 		</a>
 		<a
-			class="three columns"
-			href="https://www.twitter.com/{{ site.twitter | cgi_escape | escape }}"
+			class="two columns"
+			href="https://www.twitter.com/{{ site.author.twitter | cgi_escape | escape }}"
 		>
-			<svg class="svg-icon">
+			<svg class="svg-icon" role="img" aria-label="twitter">
 				<use
 					xlink:href="{{ '/assets/images/minima-social-icons.svg#twitter' }}"
+				></use>
+			</svg>
+		</a>
+		<a
+			class="two columns"
+			href="https://stackoverflow.com/users/{{ site.author.stackoverflow | cgi_escape | escape }}"
+		>
+			<svg class="svg-icon" role="img" aria-label="stackoverflow">
+				<use
+					xlink:href="{{ '/assets/images/minima-social-icons.svg#stackoverflow' }}"
 				></use>
 			</svg>
 		</a>
