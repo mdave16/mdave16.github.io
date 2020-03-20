@@ -14,5 +14,8 @@
 		<div class="container">
 			{%- include header.html -%} {{ content }} {%- include footer.html -%}
 		</div>
+		{% if  page.script %}
+		   <script src="/assets/js/{{ page.script }}.js"></script>
+	    {% endif %}
 	</body>
 </html>
