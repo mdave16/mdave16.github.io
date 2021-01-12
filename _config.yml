@@ -33,7 +33,6 @@ side_projects:
   - /stunning-bassoon
 
 plugins:
-  - jekyll-github-metadata
   - jekyll-feed
   - jekyll-sitemap
   - jemoji

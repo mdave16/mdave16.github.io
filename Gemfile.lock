@@ -260,7 +260,6 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   github-pages-unscramble
-  jekyll-github-metadata
 
 BUNDLED WITH
    2.0.2
