@@ -11,12 +11,9 @@ email: mdave3927@gmail.com
 github: mdave16
 linkedin: mayur-dave-b058179a
 stackoverflow: users/4400874/mdave16
-rss: feed.xml
 
 author:
   twitter: mdave248
-
-permalink: /blog/:year/:month/:day/:title
 
 # build settings
 kramdown:
