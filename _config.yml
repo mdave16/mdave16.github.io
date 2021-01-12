@@ -22,6 +22,15 @@ kramdown:
   syntax_highlighter_opts:
     css_class: "highlight"
 
+collections:
+  side_projects:
+    output: true
+    permalink: :path
+
+side_projects:
+  - /crpytography
+  - /stunning-bassoon
+
 plugins:
   - jekyll-github-metadata
   - jekyll-feed
