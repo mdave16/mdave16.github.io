@@ -485,7 +485,25 @@ title: Quotes
     return element;
   };
 
-  quotes.map(blockQuote)
+  const swap = (array, i, j) => {
+    let q = array[i]
+    array[i] = array[j]
+    array[j] = q
+    return array
+  };
+
+  const random = n =>
+    Math.floor(Math.random() * n)
+
+  const shuffle = array => {
+    let sorted = array.length
+    while (sorted > 0) {
+      swap(array, random(sorted), --sorted)
+    }
+    return array;
+  };
+
+  shuffle(quotes).map(blockQuote)
     .map(quote => div(quote, "twelve", "columns"))
     .map(rowContent => div(rowContent, "row"))
     .forEach(row => document.getElementById("quotes").appendChild(row))
