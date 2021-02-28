@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tic Tac Tic Tac Toe</title>
+		<!-- link to main stylesheet -->
+		<link rel="stylesheet" type="text/css" href="/assets/css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="/assets/css/skeleton.css" />
+		<link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+		<link rel="shortcut icon" href="/assets/images/tree.ico" />
+		<!-- Begin Jekyll SEO tag v2.6.1 -->
+		<meta name="generator" content="Jekyll v3.9.0" />
+		<meta property="og:title" content="Tic Tac Tic Tac Toe" />
+		<meta property="og:locale" content="en_US" />
+		<meta name="description" content="A bunch of stuff that I think is cool!" />
+		<meta
+			property="og:description"
+			content="A bunch of stuff that I think is cool!"
+		/>
+		<link
+			rel="canonical"
+			href="http://mdave16.github.io/pages/mdave16/tic-tac-tic-tac-toe.html"
+		/>
+		<meta
+			property="og:url"
+			content="http://mdave16.github.io/pages/mdave16/tic-tac-tic-tac-toe.html"
+		/>
+		<meta property="og:site_name" content="mdave16" />
+		<meta name="twitter:card" content="summary" />
+		<meta property="twitter:title" content="Tic Tac Tic Tac Toe" />
+		<meta name="twitter:site" content="@" />
+		<meta name="twitter:creator" content="@mdave248" />
+		<script type="application/ld+json">
+			{
+				"description": "A bunch of stuff that I think is cool!",
+				"@type": "WebPage",
+				"url": "http://mdave16.github.io/pages/mdave16/tic-tac-tic-tac-toe.html",
+				"headline": "Tic Tac Tic Tac Toe",
+				"@context": "https://schema.org"
+			}
+		</script>
+		<!-- End Jekyll SEO tag -->
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<nav class="row">
+					<a class="three columns" href="/">Home</a>
+					<a class="three columns" href="/cv">CV</a>
+					<a class="three columns" href="/quotes">Quotes</a>
+					<a class="three columns" href="/notes">Notes</a>
+				</nav>
+			</header>
+			<style>
+				.grid {
+					display: grid;
+					grid-template-columns: auto auto auto;
+					grid-template-rows: auto auto auto;
+					background-color: #2196f3;
+					padding: 10px;
+					grid-gap: 5px;
+				}
+
+				.box {
+					display: grid;
+					grid-template-columns: auto auto auto;
+					grid-template-rows: 3rem 3rem 3rem;
+					line-height: 3rem;
+					background-color: #03243fc7;
+					padding: 5px;
+					grid-gap: 5px;
+				}
+
+				.cell {
+					background-color: rgba(255, 255, 255, 0.8);
+					font-size: 1rem;
+					text-align: center;
+				}
+			</style>
+
+			<script>
+				let player = "X";
+				let lastCellPlayed = null;
+
+				const winningCombos = [
+					// horizontal
+					[0, 1, 2],
+					[3, 4, 5],
+					[6, 7, 8],
+					// vertical
+					[0, 3, 6],
+					[1, 4, 7],
+					[2, 5, 8],
+					//diagonal
+					[0, 4, 8],
+					[2, 4, 6],
+				];
+
+				const winner = (grid) => {
+					const combo = winningCombos.filter(
+						(combo) =>
+							grid[combo[0]] === grid[combo[1]] &&
+							grid[combo[0]] === grid[combo[2]] &&
+							grid[combo[0]]
+					);
+					return combo.length > 0;
+				};
+
+				const play = (cell) => {
+					if (cell.innerText !== "" || !cell.classList.contains("cell")) {
+						return null;
+					}
+
+					if (cell.parentElement.dataset.direction !== lastCellPlayed) {
+						// not correct box
+						if (
+							lastCellPlayed &&
+							Array.from(
+								document.getElementsByClassName("box " + lastCellPlayed)[0]
+									.children
+							)
+								.map((c) => c.innerText)
+								.indexOf("") > -1
+						) {
+							//correct box is not full
+							return null;
+						}
+					}
+					// play
+					cell.innerText = player;
+					lastCellPlayed = cell.dataset.direction;
+
+					const box = Array.from(cell.parentElement.children).map(
+						(cell) => cell.innerText
+					);
+					if (winner(box) && !cell.parentElement.dataset.boxWinner) {
+						cell.parentElement.dataset.boxWinner = player;
+					}
+					const grid = Array.from(document.getElementsByClassName("box")).map(
+						(box) => box.dataset.boxWinner
+					);
+					if (winner(grid)) {
+						alert(`Congratulations! The winner is: ${player}.`);
+						Array.from(document.getElementsByClassName("cell")).map(
+							(cell) => (cell.innerText = "")
+						);
+					}
+
+					player = player === "X" ? "O" : "X";
+				};
+
+				const createGrid = () => {
+					const createDiv = (size, direction) => {
+						div = document.createElement("div");
+						div.classList.add(size);
+						div.dataset.direction = direction;
+						return div;
+					};
+					const directions = [
+						"top-left",
+						"top-middle",
+						"top-right",
+						"middle-left",
+						"middle-middle",
+						"middle-right",
+						"bottom-left",
+						"bottom-middle",
+						"bottom-right",
+					];
+					grid = document.createElement("div");
+					grid.classList.add("grid");
+					directions
+						.map((x) => createDiv("box", x))
+						.map((box) => {
+							directions
+								.map((y) => createDiv("cell", y))
+								.forEach((cell) => box.appendChild(cell));
+							return box;
+						})
+						.forEach((box) => grid.appendChild(box));
+
+					document.body.appendChild(grid);
+				};
+
+				createGrid();
+				document
+					.getElementsByClassName("grid")[0]
+					.addEventListener("click", (e) => play(e.target));
+			</script>
+			<footer>
+				<div class="row">
+					<a class="three columns" href="/contact">Leave Feedback</a>
+					<a class="three columns" href="https://github.com/mdave16">
+						<svg class="svg-icon">
+							<use
+								xlink:href="/assets/images/minima-social-icons.svg#github"
+							></use>
+						</svg>
+						<span class="username">mdave16</span>
+					</a>
+					<a
+						class="three columns"
+						href="https://www.linkedin.com/in/mayur-dave-b058179a"
+					>
+						<svg class="svg-icon">
+							<use
+								xlink:href="/assets/images/minima-social-icons.svg#linkedin"
+							></use>
+						</svg>
+						<span class="username">mayur-dave-b058179a</span>
+					</a>
+					<a class="three columns" href="https://www.twitter.com/mdave248">
+						<svg class="svg-icon">
+							<use
+								xlink:href="/assets/images/minima-social-icons.svg#twitter"
+							></use>
+						</svg>
+						<span class="username">mdave248</span>
+					</a>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

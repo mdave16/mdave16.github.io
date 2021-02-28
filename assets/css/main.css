@@ -1,0 +1,33 @@
+nav ul,
+footer ul {
+	padding: 0;
+	list-style: none;
+	font-weight: bold;
+}
+
+nav ul li,
+footer ul li {
+	display: inline;
+	margin-right: 20px;
+}
+
+nav ul li:hover,
+footer ul li:hover {
+	color: #999;
+}
+
+.svg-icon {
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	padding-right: 5px;
+	vertical-align: text-top;
+}
+
+.intro {
+	text-align: center;
+}
+
+.hidden {
+	display: none;
+}
