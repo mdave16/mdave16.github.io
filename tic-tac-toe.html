@@ -23,14 +23,14 @@ title: Tic Tac Toe
 
 <div class="grid" id="grid">
     {% for i in (1..9) %}
-    <div class="cell" data-played></div>
+    <div class="cell" data-played onclick="play(event.target)"></div>
     {% endfor %}
 </div>
 
-<div id="gameOverlay">
+<div id="game-overlay" class="hidden">
     <span id="info"></span>
     <span id="score"></span>
-    <button class="button-primary hidden" id="reset-button" onclick="reset()">
+    <button class="button-primary" id="reset-button" onclick="reset()">
         Reset
     </button>
 </div>
@@ -51,9 +51,13 @@ title: Tic Tac Toe
     [0, 4, 8],
     [2, 4, 6]
   ]
-  const cells = () => Array.from(document.getElementsByClassName("cell"))
+  const gameOverlay = document.getElementById("game-overlay");
+  const cells = Array.from(document.getElementsByClassName("cell"))
+  const info = document.getElementById("info");
+  const scoreDisplay = document.getElementById("score");
+
   const winner = () => {
-    const grid = cells().map(cell => cell.dataset.played)
+    const grid = cells.map(cell => cell.dataset.played)
     const combo = winningCombos.filter(
       combo =>
         grid[combo[0]] === grid[combo[1]] &&
@@ -62,43 +66,30 @@ title: Tic Tac Toe
     )
     return combo.length > 0
   }
-  const over = () => cells()
+  const over = () => cells
     .map(c => c.dataset.played)
     .every(c => c !== "")
   const reset = () => {
-    cells().forEach(cell => (cell.dataset.played = ""))
-    document.getElementById("reset-button").classList.toggle("hidden")
+    cells.map(cell => cell.dataset.played = "")
+    gameOverlay.classList.toggle("hidden")
   }
   const play = cell => {
-    if (!document.getElementById("reset-button").classList.contains("hidden")) {
+    if (!gameOverlay.classList.contains("hidden")) {
       return null
     }
     if (cell.dataset.played === "") {
       cell.dataset.played = player
       if (winner()) {
-        alert(`Congratulations! The winner is: ${player}.`)
-        document.getElementById("reset-button").classList.toggle("hidden")
-        document.getElementById(
-          "info"
-        ).innerText = `Congratulations! The winner is: ${player}.`
+        gameOverlay.classList.toggle("hidden")
+        info.innerText = `Congratulations! The winner is: ${player}.`
         score[player]++
-        document.getElementById(
-          "score"
-        ).innerText = `Current score: X: ${score["X"]} - O: ${score["O"]}`
+        scoreDisplay.innerText = `Current score: X: ${score["X"]} - O: ${score["O"]}`
       } else if (over()) {
-        alert("Game over. Try again.")
-        document.getElementById("reset-button").classList.toggle("hidden")
-        document.getElementById("info").innerText = `Game over. Try again.`
+        gameOverlay.classList.toggle("hidden")
+        info.innerText = `Game over. Try again.`
       } else {
         player = player === "X" ? "O" : "X"
-        document.getElementById("info").innerText = `Current player: ${player}.`
       }
     }
   }
-
-  document.addEventListener("DOMContentLoaded", _ => {
-    document
-      .getElementById("grid")
-      .addEventListener("click", e => play(e.target))
-  })
 </script>
