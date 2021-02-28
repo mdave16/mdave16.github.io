@@ -6,7 +6,39 @@ title: Quotes
 <div class="row">
     <div class="twelve columns" id="content"></div>
 </div>
+<style>
+    blockquote {
+        font-size: 1.5em;
+        position: relative;
+        text-align: center;
+        cursor: pointer;
+        opacity: 0.5;
+    }
 
+    blockquote:hover {
+        opacity: 1;
+    }
+
+    blockquote:after {
+        content: '';
+        opacity: 0;
+        z-index: -1;
+    }
+
+    blockquote:hover:after {
+        position: absolute;
+        left: 0;
+        height: 1em;
+        width: 100%;
+        transform-origin: 0 50%;
+        transition: transform 0.5s cubic-bezier(0.5, 0, 0.5, 1);
+        opacity: 0.5;
+        transform: scaleX(1) translateX(0%);
+        bottom: -0.5em;
+        font-size: 0.9em;
+        content: attr(data-person) " - " attr(data-time);
+    }
+</style>
 <script>
   const quotes = [
     {
@@ -447,7 +479,11 @@ title: Quotes
 
     for (const quote of quotes) {
       const item = document.createElement("li");
-      item.innerText = (quote.hasOwnProperty("s") ? "[" + quote.s + "] — " + quote.q : quote.q) + " - " + quote.p + " - " + quote.t
+      const blockQuote = document.createElement("blockquote");
+      blockQuote.dataset.person = quote.p;
+      blockQuote.dataset.time = quote.t;
+      blockQuote.innerText = quote.hasOwnProperty("s") ? "[" + quote.s + "] — " + quote.q : quote.q
+      item.appendChild(blockQuote)
       ul.appendChild(item)
     }
 
