@@ -3,9 +3,7 @@ layout: default
 title: Quotes
 ---
 
-<div class="row">
-    <div class="twelve columns" id="content"></div>
-</div>
+<section id="quotes"></section>
 <style>
     blockquote {
         font-size: 1.5em;
@@ -472,24 +470,23 @@ title: Quotes
     //  {s: "", q: "", p: "", t: 2017},
   ];
 
-  const listAll = () => {
-    const content = document.getElementById("content");
-    const updated = content.cloneNode(false);
-    const ul = document.createElement("ul");
-
-    for (const quote of quotes) {
-      const item = document.createElement("li");
-      const blockQuote = document.createElement("blockquote");
-      blockQuote.dataset.person = quote.p;
-      blockQuote.dataset.time = quote.t;
-      blockQuote.innerText = quote.hasOwnProperty("s") ? "[" + quote.s + "] — " + quote.q : quote.q
-      item.appendChild(blockQuote)
-      ul.appendChild(item)
-    }
-
-    updated.appendChild(ul)
-
-    content.parentNode.replaceChild(updated, content)
+  const blockQuote = quote => {
+    const blockQuote = document.createElement("blockquote");
+    blockQuote.dataset.person = quote.p;
+    blockQuote.dataset.time = quote.t;
+    blockQuote.innerText = quote.hasOwnProperty("s") ? "[" + quote.s + "] — " + quote.q : quote.q
+    return blockQuote;
   };
-  listAll()
+
+  const div = (child, ...classes) => {
+    const element = document.createElement("div");
+    classes.forEach(className => element.classList.add(className))
+    element.appendChild(child)
+    return element;
+  };
+
+  quotes.map(blockQuote)
+    .map(quote => div(quote, "twelve", "columns"))
+    .map(rowContent => div(rowContent, "row"))
+    .forEach(row => document.getElementById("quotes").appendChild(row))
 </script>
