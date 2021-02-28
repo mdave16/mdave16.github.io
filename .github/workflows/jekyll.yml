@@ -18,6 +18,6 @@ jobs:
     # Standard usage
     - uses:  helaili/jekyll-action@v2
       env:
-        JEKYLL_PAT: ${{ github.actor }}:${{ github.token }}
+        token: ${{ github.actor }}:${{ github.token }}
         JEKYLL_DEBUG: true
         JEKYLL_GITHUB_TOKEN: ${{ github.token }}
