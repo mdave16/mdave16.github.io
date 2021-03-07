@@ -50,7 +50,7 @@ title: Bored?
 		"http://www.theuselessweb.com/",
 		"http://www.theproofistrivial.com/",
 		"https://smartypins.withgoogle.com/",
-	];
+	]
 
 	text = [
 		//These are texts that go in the button
@@ -59,32 +59,32 @@ title: Bored?
 		"To infinity and beyond...",
 		"One small step for man, one giant leap for mankind...",
 		"I'm going on an adventure!",
-	];
+	]
 
-	ln = -1;
-	tn = 0;
+	ln = -1
+	tn = 0
 
 	function bored() {
 		/*want text and link to change*/
 
-		ln2 = Math.floor(Math.random() * link.length);
+		ln2 = Math.floor(Math.random() * link.length)
 		while (ln == ln2) {
-			ln2 = Math.floor(Math.random() * link.length);
+			ln2 = Math.floor(Math.random() * link.length)
 		}
 
-		tn2 = Math.floor(Math.random() * text.length);
+		tn2 = Math.floor(Math.random() * text.length)
 		while (tn == tn2) {
-			tn2 = Math.floor(Math.random() * text.length);
+			tn2 = Math.floor(Math.random() * text.length)
 		}
 
-		tn = tn2;
-		ln = ln2;
+		tn = tn2
+		ln = ln2
 
-		lnk = link[ln];
-		txt = text[tn];
+		lnk = link[ln]
+		txt = text[tn]
 
-		console.log(txt + " **-** " + lnk);
-		document.getElementById("tree").setAttribute("href", lnk);
-		document.getElementById("but").innerHTML = txt;
+		console.log(txt + " **-** " + lnk)
+		document.getElementById("tree").setAttribute("href", lnk)
+		document.getElementById("but").innerHTML = txt
 	}
 </script>
