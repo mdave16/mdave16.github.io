@@ -5,86 +5,86 @@ title: Bored?
 
 <!-- top text -->
 <h2 style="text-align: center">
-  <q>I'm looking for someone to share in an adventure. </q> - Gandalf
+	<q>I'm looking for someone to share in an adventure. </q> - Gandalf
 </h2>
 <h4 style="text-align: center">
-  So won't you go on an adventure? Seeing as you're bored anyway?
+	So won't you go on an adventure? Seeing as you're bored anyway?
 </h4>
 
 <!--The great tree-->
 <div style="text-align: center">
-  <a id="tree" href="#">
-    <img src="/assets/images/Tree.jpg" alt="Gandalf awaits..." align="middle"
-  /></a>
+	<a id="tree" href="#">
+		<img src="/assets/images/Tree.jpg" alt="Gandalf awaits..." align="middle"
+	/></a>
 </div>
 
 <!-- link button -->
 <div style="text-align: center">
-  <button id="but" onclick="bored()" style="text-align: center">
-    Let's go Gandalf!
-  </button>
+	<button id="but" onclick="bored()" style="text-align: center">
+		Let's go Gandalf!
+	</button>
 </div>
 
 <script>
-  link = [
-    //Add more to these in the same format
-    "http://adarkroom.doublespeakgames.com/",
-    "https://cardgames.io/",
-    "http://davidsd.org/theorem/",
-    "http://hackertyper.com/",
-    "http://isthisprime.com/game/",
-    "http://play.typeracer.com/",
-    "http://slither.io/",
-    "http://stars.chromeexperiments.com/",
-    "http://vectorpark.com/head/",
-    "http://windosill.com/online/",
-    "http://www.2000clicks.com/MathHelp/PuzzleUnsolved.aspx",
-    "http://www.boredbutton.com/",
-    "http://www.drawastickman.com/",
-    "http://www.findtheinvisiblecow.com/",
-    "http://www.googlefeud.com/",
-    "http://www.incredibox.com/",
-    "http://www.kongregate.com/",
-    "http://www.openproblemgarden.org/",
-    "http://www.pythonchallenge.com/",
-    "http://www.theuselessweb.com/",
-    "http://www.theproofistrivial.com/",
-    "https://smartypins.withgoogle.com/",
-  ];
+	link = [
+		//Add more to these in the same format
+		"http://adarkroom.doublespeakgames.com/",
+		"https://cardgames.io/",
+		"http://davidsd.org/theorem/",
+		"http://hackertyper.com/",
+		"http://isthisprime.com/game/",
+		"http://play.typeracer.com/",
+		"http://slither.io/",
+		"http://stars.chromeexperiments.com/",
+		"http://vectorpark.com/head/",
+		"http://windosill.com/online/",
+		"http://www.2000clicks.com/MathHelp/PuzzleUnsolved.aspx",
+		"http://www.boredbutton.com/",
+		"http://www.drawastickman.com/",
+		"http://www.findtheinvisiblecow.com/",
+		"http://www.googlefeud.com/",
+		"http://www.incredibox.com/",
+		"http://www.kongregate.com/",
+		"http://www.openproblemgarden.org/",
+		"http://www.pythonchallenge.com/",
+		"http://www.theuselessweb.com/",
+		"http://www.theproofistrivial.com/",
+		"https://smartypins.withgoogle.com/",
+	];
 
-  text = [
-    //These are texts that go in the button
-    "Let's go Gandalf!",
-    "Go boldly where no man has gone before!",
-    "To infinity and beyond...",
-    "One small step for man, one giant leap for mankind...",
-    "I'm going on an adventure!",
-  ];
+	text = [
+		//These are texts that go in the button
+		"Let's go Gandalf!",
+		"Go boldly where no man has gone before!",
+		"To infinity and beyond...",
+		"One small step for man, one giant leap for mankind...",
+		"I'm going on an adventure!",
+	];
 
-  ln = -1;
-  tn = 0;
+	ln = -1;
+	tn = 0;
 
-  function bored() {
-    /*want text and link to change*/
+	function bored() {
+		/*want text and link to change*/
 
-    ln2 = Math.floor(Math.random() * link.length);
-    while (ln == ln2) {
-      ln2 = Math.floor(Math.random() * link.length);
-    }
+		ln2 = Math.floor(Math.random() * link.length);
+		while (ln == ln2) {
+			ln2 = Math.floor(Math.random() * link.length);
+		}
 
-    tn2 = Math.floor(Math.random() * text.length);
-    while (tn == tn2) {
-      tn2 = Math.floor(Math.random() * text.length);
-    }
+		tn2 = Math.floor(Math.random() * text.length);
+		while (tn == tn2) {
+			tn2 = Math.floor(Math.random() * text.length);
+		}
 
-    tn = tn2;
-    ln = ln2;
+		tn = tn2;
+		ln = ln2;
 
-    lnk = link[ln];
-    txt = text[tn];
+		lnk = link[ln];
+		txt = text[tn];
 
-    console.log(txt + " **-** " + lnk);
-    document.getElementById("tree").setAttribute("href", lnk);
-    document.getElementById("but").innerHTML = txt;
-  }
+		console.log(txt + " **-** " + lnk);
+		document.getElementById("tree").setAttribute("href", lnk);
+		document.getElementById("but").innerHTML = txt;
+	}
 </script>
