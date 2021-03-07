@@ -47,7 +47,7 @@ Other Information
 
 * **Computer skills**
 	* Mathematics-oriented languages (Sage, Magma)
-	* Generic (Python, C, Java, Ruby)
+	* Generic (Python, C, Java, Ruby, Clojure, Kotlin)
 	* Markup/Visual (Markdown, HTML, CSS)
 
 * **First Aid**
