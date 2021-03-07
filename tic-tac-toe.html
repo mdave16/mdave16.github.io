@@ -59,6 +59,7 @@
 					padding: 10px;
 					grid-gap: 10px;
 				}
+
 				.cell {
 					background-color: rgba(255, 255, 255, 0.8);
 					padding: 20px;
@@ -66,29 +67,33 @@
 					text-align: center;
 				}
 			</style>
-			<section class="intro">
-				<h2 id="title">Tic Tac Toe</h2>
-				<p id="info">Current player: X.</p>
-				<p id="score">Current score: X: 0 - O: 0</p>
-				<button
-					class="button-primary hidden"
-					id="reset-button"
-					onclick="reset()"
-				>
-					Reset
-				</button>
-			</section>
 
 			<div class="grid" id="grid">
-				<div class="cell"></div>
-				<div class="cell"></div>
-				<div class="cell"></div>
-				<div class="cell"></div>
-				<div class="cell"></div>
-				<div class="cell"></div>
-				<div class="cell"></div>
-				<div class="cell"></div>
-				<div class="cell"></div>
+				<div class="cell" data-played onclick="play(event.target)"></div>
+
+				<div class="cell" data-played onclick="play(event.target)"></div>
+
+				<div class="cell" data-played onclick="play(event.target)"></div>
+
+				<div class="cell" data-played onclick="play(event.target)"></div>
+
+				<div class="cell" data-played onclick="play(event.target)"></div>
+
+				<div class="cell" data-played onclick="play(event.target)"></div>
+
+				<div class="cell" data-played onclick="play(event.target)"></div>
+
+				<div class="cell" data-played onclick="play(event.target)"></div>
+
+				<div class="cell" data-played onclick="play(event.target)"></div>
+			</div>
+
+			<div id="game-overlay" class="hidden">
+				<span id="info"></span>
+				<span id="score"></span>
+				<button class="button-primary" id="reset-button" onclick="reset()">
+					Reset
+				</button>
 			</div>
 
 			<script>
@@ -107,9 +112,13 @@
 					[0, 4, 8],
 					[2, 4, 6],
 				];
-				const cells = () => Array.from(document.getElementsByClassName("cell"));
+				const gameOverlay = document.getElementById("game-overlay");
+				const cells = Array.from(document.getElementsByClassName("cell"));
+				const info = document.getElementById("info");
+				const scoreDisplay = document.getElementById("score");
+
 				const winner = () => {
-					const grid = cells().map((cell) => cell.innerText);
+					const grid = cells.map((cell) => cell.dataset.played);
 					const combo = winningCombos.filter(
 						(combo) =>
 							grid[combo[0]] === grid[combo[1]] &&
@@ -119,54 +128,30 @@
 					return combo.length > 0;
 				};
 				const over = () =>
-					cells()
-						.map((c) => c.innerText)
-						.every((c) => c !== "");
+					cells.map((c) => c.dataset.played).every((c) => c !== "");
 				const reset = () => {
-					cells().forEach((cell) => (cell.innerText = ""));
-					document.getElementById("reset-button").classList.toggle("hidden");
+					cells.map((cell) => (cell.dataset.played = ""));
+					gameOverlay.classList.toggle("hidden");
 				};
 				const play = (cell) => {
-					if (cell.innerText !== "" || cell.className === "grid") {
+					if (!gameOverlay.classList.contains("hidden")) {
 						return null;
 					}
-					if (
-						!document
-							.getElementById("reset-button")
-							.classList.contains("hidden")
-					) {
-						return null;
-					}
-
-					cell.innerText = player;
-
-					if (winner()) {
-						alert(`Congratulations! The winner is: ${player}.`);
-						document.getElementById("reset-button").classList.toggle("hidden");
-						document.getElementById(
-							"info"
-						).innerText = `Congratulations! The winner is: ${player}.`;
-						score[player]++;
-						document.getElementById(
-							"score"
-						).innerText = `Current score: X: ${score["X"]} - O: ${score["O"]}`;
-					} else if (over()) {
-						alert("Game over. Try again.");
-						document.getElementById("reset-button").classList.toggle("hidden");
-						document.getElementById("info").innerText = `Game over. Try again.`;
-					} else {
-						player = player === "X" ? "O" : "X";
-						document.getElementById(
-							"info"
-						).innerText = `Current player: ${player}.`;
+					if (cell.dataset.played === "") {
+						cell.dataset.played = player;
+						if (winner()) {
+							gameOverlay.classList.toggle("hidden");
+							info.innerText = `Congratulations! The winner is: ${player}.`;
+							score[player]++;
+							scoreDisplay.innerText = `Current score: X: ${score["X"]} - O: ${score["O"]}`;
+						} else if (over()) {
+							gameOverlay.classList.toggle("hidden");
+							info.innerText = `Game over. Try again.`;
+						} else {
+							player = player === "X" ? "O" : "X";
+						}
 					}
 				};
-
-				document.addEventListener("DOMContentLoaded", (_) => {
-					document
-						.getElementById("grid")
-						.addEventListener("click", (e) => play(e.target));
-				});
 			</script>
 			<footer>
 				<div class="row">
