@@ -1,33 +1,40 @@
 ---
-layout: default
 title: Bored?
 ---
 
-<!-- top text -->
-<h2 style="text-align: center">
-	<q>I'm looking for someone to share in an adventure. </q> - Gandalf
-</h2>
-<h4 style="text-align: center">
-	So won't you go on an adventure? Seeing as you're bored anyway?
-</h4>
-
-<!--The great tree-->
-<div style="text-align: center">
-	<a id="tree" href="#">
-		<img src="/assets/images/Tree.jpg" alt="Gandalf awaits..." align="middle"
-	/></a>
+<style>
+	iframe:not([src]) {
+		display: none;
+	}
+	iframe[src] {
+		border: none;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		height: calc(100% - 98px);
+		/* FIXME calculate 98 for your own page */
+	}
+	#dialog.minimise {
+		height: 98px;
+	}
+	#dialog #tree {
+		height: 64px;
+		width: 64px;
+	}
+</style>
+<div id="dialog">
+	<p>Click on the path to go on an adventure!</p>
+	<img
+		id="tree"
+		src="/assets/images/Tree.jpg"
+		alt="The journey ahead."
+		align="middle"
+		onclick="bored()"
+	/>
 </div>
-
-<!-- link button -->
-<div style="text-align: center">
-	<button id="but" onclick="bored()" style="text-align: center">
-		Let's go Gandalf!
-	</button>
-</div>
-
+<iframe id="iframe"></iframe>
 <script>
 	link = [
-		//Add more to these in the same format
 		"http://adarkroom.doublespeakgames.com/",
 		"https://cardgames.io/",
 		"http://davidsd.org/theorem/",
@@ -38,22 +45,18 @@ title: Bored?
 		"http://stars.chromeexperiments.com/",
 		"http://vectorpark.com/head/",
 		"http://windosill.com/online/",
-		"http://www.2000clicks.com/MathHelp/PuzzleUnsolved.aspx",
 		"http://www.boredbutton.com/",
 		"http://www.drawastickman.com/",
 		"http://www.findtheinvisiblecow.com/",
 		"http://www.googlefeud.com/",
 		"http://www.incredibox.com/",
-		"http://www.kongregate.com/",
 		"http://www.openproblemgarden.org/",
 		"http://www.pythonchallenge.com/",
 		"http://www.theuselessweb.com/",
 		"http://www.theproofistrivial.com/",
-		"https://smartypins.withgoogle.com/",
 	]
 
 	text = [
-		//These are texts that go in the button
 		"Let's go Gandalf!",
 		"Go boldly where no man has gone before!",
 		"To infinity and beyond...",
@@ -84,7 +87,9 @@ title: Bored?
 		txt = text[tn]
 
 		console.log(txt + " **-** " + lnk)
-		document.getElementById("tree").setAttribute("href", lnk)
-		document.getElementById("but").innerHTML = txt
+		// document.getElementById("footer").setAttribute("src", lnk)
+		document.getElementById("dialog").setAttribute("src", lnk)
+		document.getElementById("iframe").setAttribute("src", lnk)
+		// document.getElementById("but").innerHTML = txt
 	}
 </script>
