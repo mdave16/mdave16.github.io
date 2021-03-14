@@ -12,10 +12,17 @@ email: mdave3927@gmail.com
 github: mdave16
 linkedin: mayur-dave-b058179a
 stackoverflow: users/4400874/mdave16
-
+logo: /assets/images/tree.ico
+social:
+  name: Mayur Dave
+  links:
+    - https://twitter.com/mdave248
+    - https://www.linkedin.com/in/mayur-dave-b058179a
+    - https://github.com/mdave16
+    - https://stackoverflow.com/users/4400874/mdave16
 author:
   twitter: mdave248
-
+locale: en_GB
 # build settings
 kramdown:
   input: GFM
