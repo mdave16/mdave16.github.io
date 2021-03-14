@@ -25,6 +25,12 @@ social:
 author:
   twitter: mdave248
 locale: en_GB
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
 # build settings
 kramdown:
   input: GFM

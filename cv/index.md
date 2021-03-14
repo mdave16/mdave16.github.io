@@ -1,7 +1,5 @@
 ---
-layout: default
 title: CV
-canonical_url: /cv/
 ---
 
 ## Experience
