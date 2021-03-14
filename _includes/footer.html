@@ -13,7 +13,7 @@
       </svg>
       <span class="username">{{ site.linkedin | escape }}</span>
     </a>
-    <a class="three columns" href="https://www.twitter.com/{{ site.twitter | cgi_escape | escape }}">
+    <a class="three columns" href="https://www.twitter.com/{{ site.twitter.username | cgi_escape | escape }}">
       <svg class="svg-icon">
         <use xlink:href="{{ '/assets/images/minima-social-icons.svg#twitter' }}"></use>
       </svg>
