@@ -43,6 +43,9 @@ collections:
   side_projects:
     output: true
     permalink: :path
+  posts:
+    output: true
+    permalink: /:categories/:year/:month/:day/:title/
 
 side_projects:
   - /crpytography
