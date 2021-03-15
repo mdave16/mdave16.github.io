@@ -53,8 +53,8 @@ Also see my [Github][_gh] and [my website][_ghp] for full CV.
 
 - **British Citizen** with a full driving licence
 
-- **Post Gold Officer** with [Warwick Duke of Edinburgh Society][_wdofe] (15 - 17)
-- **Project Leader** for the [**Technology Volunteers**][_tv] (16 - 17)
+- **Post Gold Officer** with [Warwick Duke of Edinburgh Society][_wdofe] (15 – 17)
+- **Project Leader** for the [**Technology Volunteers**][_tv] (16 – 17)
 
 <!--- All the links -->
 

@@ -7,7 +7,7 @@ title: Quotes
 	<div class="row">
 		<div class="twelve columns">
 			<blockquote data-person="{{ quote.person }}" data-time="{{ quote.time }}">
-				{% if quote.scenario %} [{{quote.scenario}}] - {% endif %}
+				{% if quote.scenario %} [{{quote.scenario}}] – {% endif %}
 				{{quote.quote}}
 			</blockquote>
 		</div>
@@ -35,7 +35,7 @@ title: Quotes
 		transform: scaleX(1) translateX(0%);
 		bottom: -0.5em;
 		font-size: 0.9em;
-		content: attr(data-person) " - " attr(data-time);
+		content: attr(data-person) " – " attr(data-time);
 	}
 
 	@media (min-width: 750px) {
@@ -64,7 +64,7 @@ title: Quotes
 			transform: scaleX(1) translateX(0%);
 			bottom: -0.5em;
 			font-size: 0.9em;
-			content: attr(data-person) " - " attr(data-time);
+			content: attr(data-person) " – " attr(data-time);
 		}
 	}
 </style>

@@ -1,6 +1,5 @@
 ---
 title: Automate Problems Away with Token Jobs
-date: 2019-12-30
 tags:
   - Agile
   - Coding Practices
