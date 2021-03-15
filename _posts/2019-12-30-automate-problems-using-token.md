@@ -46,17 +46,3 @@ Two of the main tools that were developed in house started off as Token jobs.
 All in all, the token has been serving us well. It has certainly helped us find solutions, from keeping track of stories to ensuring we are not blocked by flaky tests.
 
 Things work best when engineers do what they do best and automate the problems away. Ultimately, The Token is simply an efficient means to an end.
-
-<style>
-header {
-  padding: 2rem;
-}
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-p {
-  font-size: 3rem
-}
-</style>

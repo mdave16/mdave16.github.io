@@ -17,17 +17,3 @@ The hockey stick theorem, Pisano numbers, +1 Primes, Integer Partitions... Soon
 I'll be moving onto transcendence theory now, expect that one next.
 
 https://files.warwick.ac.uk/mdave/files/Digit-Theory/dless.pdf
-
-<style>
-header {
-  padding: 2rem;
-}
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-p {
-  font-size: 3rem
-}
-</style>

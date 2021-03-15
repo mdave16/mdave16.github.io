@@ -20,18 +20,3 @@ Upon closer inspection, I had caught a glimpse of the rabbit. Soon after I found
 The rabbit, for those wondering, was I needed to compute an initial "Perfect Form" given from a brute force search in O^2 where O is the maximal order in Q(-sqrt(d)) where d was my input. Still seems hard to grasp, but at least it was digestible.
 
 I start to code comments of the break points and get started on catching up to the rabbit. As well as understanding more of the definitions. In time, I think it's doable. Rome wasn't build in a day.
-
-
-<style>
-header {
-  padding: 2rem;
-}
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-p {
-  font-size: 3rem
-}
-</style>

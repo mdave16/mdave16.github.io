@@ -14,17 +14,3 @@ Considering flask is a micro framework (as in it's just bare bones), it really s
 Eitherway, I will upload the tutorial to build a site from nothing using it ( an even more bare-bones replica of my current site). Along with video (hopefully).
 
 I've recently changed my Linux laptop yet again to OpenSuse and it's seeming ok, so once I'm fully set up i'll start producing it.
-
-<style>
-header {
-  padding: 2rem;
-}
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-p {
-  font-size: 3rem
-}
-</style>

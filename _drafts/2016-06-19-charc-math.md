@@ -15,16 +15,3 @@ I've yet to polish it up and publish it to PyPi, but I will do soon.
 
 I had naively and rather pretentiously originally labelled it 'Math2'. This was back when the module was just on my own computer, and I didn't know PEP so well. I took a look, and Math2 has significantly more downloads than charc_math, despite the latter having more in it. If anyone has more suggestions to the name of my module, I'm all ears.
 
-<style>
-header {
-  padding: 2rem;
-}
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-p {
-  font-size: 3rem
-}
-</style>

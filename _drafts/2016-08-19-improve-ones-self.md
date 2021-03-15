@@ -18,17 +18,3 @@ He also said not to improve too many things at a time, and only stick to two, or
 If you hadn't noticed, I do love puns and also play on words, as well as using words in their multitude of meanings.
 
 Hopefully by the end of summer, I'll finally become better, and update the documents I keep saying I will
-
-<style>
-header {
-  padding: 2rem;
-}
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-p {
-  font-size: 3rem
-}
-</style>

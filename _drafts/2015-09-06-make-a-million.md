@@ -25,17 +25,3 @@ Mayur
 ---------------------
 
 EDIT: The link is now defunct. Will be hosting my material in the myfiles.warwick server. E-mail me if you want to see all the files in their entirity, but the main ones should be available anyway.
-
-<style>
-header {
-  padding: 2rem;
-}
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-p {
-  font-size: 3rem
-}
-</style>

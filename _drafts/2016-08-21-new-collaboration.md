@@ -16,17 +16,3 @@ One of them is spiral.pi which iterates over things of a given norm. The others 
 Again, the majority of these functions are really just for me, I just thought they'd be useful for others. With Ben now also working on it, this may change and it may become more friendly to other users. I'm also going to see if he can come up with a better name.
 
 While this is happening, I may also create a python3 version, and slowly start moving there. SciPy is supported in it, and so really I have little excuse of going there. I'm also thinking after a while I'll move to another language, one which is better for mathematicians. I've still got plenty of coding to learn and still Bash to conquer, so i think this will make a nice hobby.
-
-<style>
-header {
-  padding: 2rem;
-}
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-p {
-  font-size: 3rem
-}
-</style>

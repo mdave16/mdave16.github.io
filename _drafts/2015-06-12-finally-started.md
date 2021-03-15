@@ -21,17 +21,3 @@ Finally started blogging again, this time with purpose. I and a few of my friend
 Before you get all impressed, or thinking that we're over-achievers, these results should be fairly trivial, and within our grasp, we could look them up at any point, but we are trying to do the research ourselves. One day, we may be at a point, where we cannot just look it up, it is just practice for then :)
 
 I have done some, just unlogged, will type those up in LaTeX and then move on to doing the others.
-
-<style>
-header {
-  padding: 2rem;
-}
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-p {
-  font-size: 3rem
-}
-</style>
