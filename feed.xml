@@ -1,1 +1,59 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://mdave16.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="http://mdave16.github.io/" rel="alternate" type="text/html" /><updated>2021-03-15T01:24:28+00:00</updated><id>http://mdave16.github.io/feed.xml</id><title type="html">mdave16</title><subtitle>Personal website of Mayur Dave, software engineer who enjoys maths and board games.</subtitle><author><name>{&quot;twitter&quot;=&gt;&quot;mdave248&quot;}</name></author></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://mdave16.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="http://mdave16.github.io/" rel="alternate" type="text/html" /><updated>2021-03-15T02:19:48+00:00</updated><id>http://mdave16.github.io/feed.xml</id><title type="html">mdave16</title><subtitle>Personal website of Mayur Dave, software engineer who enjoys maths and board games.</subtitle><author><name>{&quot;twitter&quot;=&gt;&quot;mdave248&quot;}</name></author><entry><title type="html">ShipShip — The Automated Kanban Board</title><link href="http://mdave16.github.io/2019/03/27/shipship/" rel="alternate" type="text/html" title="ShipShip — The Automated Kanban Board" /><published>2019-03-27T00:00:00+00:00</published><updated>2019-03-27T00:00:00+00:00</updated><id>http://mdave16.github.io/2019/03/27/shipship</id><content type="html" xml:base="http://mdave16.github.io/2019/03/27/shipship/">&lt;p&gt;At eBay, each development team works with multiple distributed teams. To keep everyone on the same page with the different projects that they are working on, we built a tool called ShipShip to help keep information flowing.&lt;/p&gt;
+
+&lt;p&gt;ShipShip is an automated Kanban board that fetches information from &lt;a href=&quot;https://github.com/&quot;&gt;GitHub&lt;/a&gt;, our internal deployment platform, and &lt;a href=&quot;https://jenkins.io/&quot;&gt;Jenkins&lt;/a&gt;, stitches everything together, and throws out an automated Kanban board that moves with pull requests, builds, and deployments. The only manual step in the process is to manually verify each story in QA.&lt;/p&gt;
+
+&lt;p&gt;This started out as a quick tool created as a part of my internship to show deployment status for every commit on our master branch. After the initial version was released, we kept adding more and more helpful features, and now it is a stand-alone service we use every day for stand-ups and deployments.&lt;/p&gt;
+
+&lt;p&gt;We strive for continuous delivery, working closely to the &lt;a href=&quot;https://guides.github.com/introduction/flow/&quot;&gt;GitHub flow&lt;/a&gt;. In a nutshell, for each piece of work, we create a pull request. When ready, after review, it is merged back to master. After going through a CI, we check our changes in QA/staging before deploying master to production. We have built ShipShip to work around us.&lt;/p&gt;
+
+&lt;p&gt;&lt;img title=&quot;The zen of the github flow&quot; src=&quot;https://tech.ebayinc.com/assets/Uploads/Editor/_resampled/ResizedImageWzYwMCw1MV0/Screen-Shot-2018-12-19-at-22.23.22.png&quot; alt=&quot;Anylsis -&amp;gt; Coding &amp;lt;-&amp;gt; Review -&amp;gt; Validate -&amp;gt; Deploy&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;At Shutl, we use seven columns to track the progress of anything, as shown in the following figure.&lt;/p&gt;
+
+&lt;p&gt;&lt;img title=&quot;Kanban Overview&quot; src=&quot;https://tech.ebayinc.com/assets/Uploads/Editor/_resampled/ResizedImageWzYwMCwzMzhd/Screen-Shot-2018-11-29-at-16.14.43.png&quot; alt=&quot;Kanban Overview&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Let’s follow a story.&lt;/p&gt;
+
+&lt;p&gt;&lt;img title=&quot;A sample card from the Review column&quot; src=&quot;https://tech.ebayinc.com/assets/Uploads/Editor/_resampled/ResizedImageWzQwMCwyMzld/Screen-Shot-2018-11-29-at-17.04.54.png&quot; alt=&quot;A sample card from the Review column&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Notice the conflicts in this pull request.&lt;/p&gt;
+
+&lt;p&gt;This is the card that opens when a new pull request is opened, usually in the “in progress” or the “review” columns, indicating whether it is ready or still being worked on. It allows you to see the team, the repo, the author — all the usual suspects, as taken from Git and our deployment tool. It also shows conflicts and whether or not the PR build is broken. The only difference between work in progress and review is if you have tagged it for review on Git.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tech.ebayinc.com/assets/Uploads/Editor/_resampled/ResizedImageWzM5OCwyNDJd/Screen-Shot-2018-11-29-at-16.15.07.png&quot; title=&quot;A card which is merged but not deployed&quot; alt=&quot;A card which is merged but not deployed&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The grey clock symbolizes that this is merged and not yet deployed.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tech.ebayinc.com/assets/Uploads/Editor/_resampled/ResizedImageWzQwMCwzMzJd/Screen-Shot-2018-11-29-at-17.15.48.png&quot; title=&quot;Engineer Approval&quot; alt=&quot;Engineer Approval&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In QA, the engineer checks it out. Notice this is the first time you’ve interacted with ShipShip directly. You sign off whether the change has the desired effect on QA. Shortly after, a product manager will run an acceptance test to say this is indeed the changes requested.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tech.ebayinc.com/assets/Uploads/Editor/_resampled/ResizedImageWzM5OSwyMDZd/Screen-Shot-2018-11-29-at-17.24.14.png&quot; title=&quot;Product Approval&quot; alt=&quot;Product Approval&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A reset button is provided for misclicks and misunderstandings. If there’s something to communicate, you can even comment to point things out. To filter out some noise, there are filters for individual users, projects, and teams. Here we are going to filter cards being worked on by the &lt;a href=&quot;https://ebaytech.london/2017/05/feature-teams-101/&quot;&gt;Moshpit team&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tech.ebayinc.com/assets/Uploads/Editor/_resampled/ResizedImageWzYwMCw2N10/Screen-Shot-2018-11-29-at-17.16.27.png&quot; title=&quot;You can filter by team, project and user.&quot; alt=&quot;Applying filters to the kanban board.&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tech.ebayinc.com/assets/Uploads/Editor/_resampled/ResizedImageWzQwMCwyNThd/Screen-Shot-2018-11-29-at-17.16.01.png&quot; title=&quot;Filter in use.&quot; alt=&quot;Filter in use.&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In order to be more visual, there are also “blocker” and “blocked” tags. The banners also auto neutralize when a broken PR is fixed by a later PR.&lt;/p&gt;
+
+&lt;p&gt;After making sure your card has no blockers, you can deploy, and the card will move to the correct column. There’s also a detailed view of cards for when you want to revisit them.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://tech.ebayinc.com/assets/Uploads/Editor/_resampled/ResizedImageWzYwMCwyNDZd/Screen-Shot-2018-11-29-at-17.22.59.png&quot; title=&quot;Detailed view of a card.&quot; alt=&quot;Detailed view of a card.&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This has helped us support each other better as engineers and has been key in helping communication between different teams. It was also a great way for me to learn the whole lifecycle of the development process as an &lt;a href=&quot;https://ebaytech.london/2018/03/internship/&quot;&gt;intern&lt;/a&gt;.&lt;/p&gt;
+
+&lt;style&gt;
+header {
+  padding: 2rem;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+p {
+  font-size: 3rem
+}
+&lt;/style&gt;</content><author><name>{&quot;twitter&quot;=&gt;&quot;mdave248&quot;}</name></author><category term="Internal Tools" /><category term="eBay" /><category term="Agile" /><category term="Developer Tools" /><category term="Interns" /><category term="New Hires" /><category term="Culture" /><category term="Shutl" /><category term="Ruby" /><summary type="html">At eBay, each development team works with multiple distributed teams. To keep everyone on the same page with the different projects that they are working on, we built a tool called ShipShip to help keep information flowing.</summary></entry></feed>
