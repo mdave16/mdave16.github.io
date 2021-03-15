@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://mdave16.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="http://mdave16.github.io/" rel="alternate" type="text/html" /><updated>2021-03-15T03:16:26+00:00</updated><id>http://mdave16.github.io/feed.xml</id><title type="html">mdave16</title><subtitle>Personal website of Mayur Dave, software engineer who enjoys maths and board games.</subtitle><author><name>{&quot;twitter&quot;=&gt;&quot;mdave248&quot;}</name></author><entry><title type="html">Automate Problems Away with Token Jobs</title><link href="http://mdave16.github.io/2019/12/30/automate-problems-using-token/" rel="alternate" type="text/html" title="Automate Problems Away with Token Jobs" /><published>2019-12-30T00:00:00+00:00</published><updated>2019-12-30T00:00:00+00:00</updated><id>http://mdave16.github.io/2019/12/30/automate-problems-using-token</id><content type="html" xml:base="http://mdave16.github.io/2019/12/30/automate-problems-using-token/">&lt;p&gt;Got a problem? Spend some time writing a script to do it for you. Got a bigger problem? Write a service that fixes it for you. Want to solve problems with software engineering? Use Token Jobs.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://mdave16.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="http://mdave16.github.io/" rel="alternate" type="text/html" /><updated>2021-03-15T03:27:36+00:00</updated><id>http://mdave16.github.io/feed.xml</id><title type="html">mdave16</title><subtitle>Personal website of Mayur Dave, software engineer who enjoys maths and board games.</subtitle><author><name>{&quot;twitter&quot;=&gt;&quot;mdave248&quot;}</name></author><entry><title type="html">Automate Problems Away with Token Jobs</title><link href="http://mdave16.github.io/2019/12/30/automate-problems-using-token/" rel="alternate" type="text/html" title="Automate Problems Away with Token Jobs" /><published>2019-12-30T00:00:00+00:00</published><updated>2019-12-30T00:00:00+00:00</updated><id>http://mdave16.github.io/2019/12/30/automate-problems-using-token</id><content type="html" xml:base="http://mdave16.github.io/2019/12/30/automate-problems-using-token/">&lt;p&gt;Got a problem? Spend some time writing a script to do it for you. Got a bigger problem? Write a service that fixes it for you. Want to solve problems with software engineering? Use Token Jobs.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://static.ebayinc.com/static/assets/Uploads/Blog/Posts/_resampled/FillWyI4MDAiLDU1MF0/IMG-1641.jpg&quot; alt=&quot;Developer looking at screen.&quot; title=&quot;How to fix this?&quot; /&gt;&lt;/p&gt;
 
@@ -34,21 +34,7 @@
 
 &lt;p&gt;All in all, the token has been serving us well. It has certainly helped us find solutions, from keeping track of stories to ensuring we are not blocked by flaky tests.&lt;/p&gt;
 
-&lt;p&gt;Things work best when engineers do what they do best and automate the problems away. Ultimately, The Token is simply an efficient means to an end.&lt;/p&gt;
-
-&lt;style&gt;
-header {
-  padding: 2rem;
-}
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-p {
-  font-size: 3rem
-}
-&lt;/style&gt;</content><author><name>{&quot;twitter&quot;=&gt;&quot;mdave248&quot;}</name></author><category term="Agile" /><category term="Coding Practices" /><category term="Internal Open Source" /><category term="eBay" /><category term="Developer Tools" /><category term="Culture" /><category term="Shutl" /><summary type="html">Got a problem? Spend some time writing a script to do it for you. Got a bigger problem? Write a service that fixes it for you. Want to solve problems with software engineering? Use Token Jobs.</summary></entry><entry><title type="html">ShipShip — The Automated Kanban Board</title><link href="http://mdave16.github.io/2019/03/27/shipship/" rel="alternate" type="text/html" title="ShipShip — The Automated Kanban Board" /><published>2019-03-27T00:00:00+00:00</published><updated>2019-03-27T00:00:00+00:00</updated><id>http://mdave16.github.io/2019/03/27/shipship</id><content type="html" xml:base="http://mdave16.github.io/2019/03/27/shipship/">&lt;p&gt;At eBay, each development team works with multiple distributed teams. To keep everyone on the same page with the different projects that they are working on, we built a tool called ShipShip to help keep information flowing.&lt;/p&gt;
+&lt;p&gt;Things work best when engineers do what they do best and automate the problems away. Ultimately, The Token is simply an efficient means to an end.&lt;/p&gt;</content><author><name>{&quot;twitter&quot;=&gt;&quot;mdave248&quot;}</name></author><category term="Agile" /><category term="Coding Practices" /><category term="Internal Open Source" /><category term="eBay" /><category term="Developer Tools" /><category term="Culture" /><category term="Shutl" /><summary type="html">Got a problem? Spend some time writing a script to do it for you. Got a bigger problem? Write a service that fixes it for you. Want to solve problems with software engineering? Use Token Jobs.</summary></entry><entry><title type="html">ShipShip — The Automated Kanban Board</title><link href="http://mdave16.github.io/2019/03/27/shipship/" rel="alternate" type="text/html" title="ShipShip — The Automated Kanban Board" /><published>2019-03-27T00:00:00+00:00</published><updated>2019-03-27T00:00:00+00:00</updated><id>http://mdave16.github.io/2019/03/27/shipship</id><content type="html" xml:base="http://mdave16.github.io/2019/03/27/shipship/">&lt;p&gt;At eBay, each development team works with multiple distributed teams. To keep everyone on the same page with the different projects that they are working on, we built a tool called ShipShip to help keep information flowing.&lt;/p&gt;
 
 &lt;p&gt;ShipShip is an automated Kanban board that fetches information from &lt;a href=&quot;https://github.com/&quot;&gt;GitHub&lt;/a&gt;, our internal deployment platform, and &lt;a href=&quot;https://jenkins.io/&quot;&gt;Jenkins&lt;/a&gt;, stitches everything together, and throws out an automated Kanban board that moves with pull requests, builds, and deployments. The only manual step in the process is to manually verify each story in QA.&lt;/p&gt;
 
@@ -92,18 +78,4 @@ p {
 
 &lt;p&gt;&lt;img src=&quot;https://static.ebayinc.com/static/assets/Uploads/Editor/_resampled/ResizedImageWzYwMCwyNDZd/Screen-Shot-2018-11-29-at-17.22.59.png&quot; title=&quot;Detailed view of a card.&quot; alt=&quot;Detailed view of a card.&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;This has helped us support each other better as engineers and has been key in helping communication between different teams. It was also a great way for me to learn the whole lifecycle of the development process as an &lt;a href=&quot;https://ebaytech.london/2018/03/internship/&quot;&gt;intern&lt;/a&gt;.&lt;/p&gt;
-
-&lt;style&gt;
-header {
-  padding: 2rem;
-}
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-p {
-  font-size: 3rem
-}
-&lt;/style&gt;</content><author><name>{&quot;twitter&quot;=&gt;&quot;mdave248&quot;}</name></author><category term="Internal Tools" /><category term="eBay" /><category term="Agile" /><category term="Developer Tools" /><category term="Interns" /><category term="New Hires" /><category term="Culture" /><category term="Shutl" /><category term="Ruby" /><summary type="html">At eBay, each development team works with multiple distributed teams. To keep everyone on the same page with the different projects that they are working on, we built a tool called ShipShip to help keep information flowing.</summary></entry></feed>
+&lt;p&gt;This has helped us support each other better as engineers and has been key in helping communication between different teams. It was also a great way for me to learn the whole lifecycle of the development process as an &lt;a href=&quot;https://ebaytech.london/2018/03/internship/&quot;&gt;intern&lt;/a&gt;.&lt;/p&gt;</content><author><name>{&quot;twitter&quot;=&gt;&quot;mdave248&quot;}</name></author><category term="Internal Tools" /><category term="eBay" /><category term="Agile" /><category term="Developer Tools" /><category term="Interns" /><category term="New Hires" /><category term="Culture" /><category term="Shutl" /><category term="Ruby" /><summary type="html">At eBay, each development team works with multiple distributed teams. To keep everyone on the same page with the different projects that they are working on, we built a tool called ShipShip to help keep information flowing.</summary></entry></feed>
