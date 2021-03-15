@@ -1,1 +1,1 @@
-Sitemap: http://mdave16.github.io/pages/mdave16/sitemap.xml
+Sitemap: http://mdave16.github.io/sitemap.xml
