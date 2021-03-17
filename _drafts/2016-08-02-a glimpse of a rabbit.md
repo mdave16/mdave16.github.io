@@ -12,7 +12,7 @@ I set out on the quest for my rabbit. Once I see the fluffy tail of the rabbit, 
 
 I've been going through the shorter of the papers, hoping it would also be the simpler one. It was also the paper my supervisor told me to start with, so one can hope it is simple. A few lines in I'm already met with words I have heard in passing but never understood and simple words which I do understand attached to words I don't, meaning even the little hope I had of understanding it was lost.
 
-Marc advised that I go through the paper slowly and it should start to make much more sense. So I take a large peice of paper and write down these words, look up their definitions and try to understand each one and continue. All of a sudden, I see a white hair. It looks like a rabbit.
+Marc advised that I go through the paper slowly and it should start to make much more sense. So I take a large piece of paper and write down these words, look up their definitions and try to understand each one and continue. All of a sudden, I see a white hair. It looks like a rabbit.
 
 Upon closer inspection, I had caught a glimpse of the rabbit. Soon after I found the whole of the rabbit.
 

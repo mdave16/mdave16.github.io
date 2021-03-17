@@ -10,6 +10,6 @@ So I've had a website on pythonanywhere for a while now. I've enjoyed using flas
 
 Considering flask is a micro framework (as in it's just bare bones), it really should be easy to learn. I'm not sure what it says about me as a programmer if I can't learn it that well.
 
-Eitherway, I will upload the tutorial to build a site from nothing using it ( an even more bare-bones replica of my current site). Along with video (hopefully).
+Either way, I will upload the tutorial to build a site from nothing using it ( an even more bare-bones replica of my current site). Along with video (hopefully).
 
 I've recently changed my Linux laptop yet again to OpenSuse and it's seeming ok, so once I'm fully set up i'll start producing it.

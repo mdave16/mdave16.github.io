@@ -101,7 +101,7 @@ title: Tic Tac Tic Tac Toe
 
 	const createGrid = () => {
 		const createDiv = (size, direction) => {
-			div = document.createElement("div")
+			const div = document.createElement("div")
 			div.classList.add(size)
 			div.dataset.direction = direction
 			return div
@@ -117,7 +117,7 @@ title: Tic Tac Tic Tac Toe
 			"bottom-middle",
 			"bottom-right",
 		]
-		grid = document.createElement("div")
+		const grid = document.createElement("div")
 		grid.classList.add("grid")
 		directions
 			.map(x => createDiv("box", x))

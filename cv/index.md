@@ -20,7 +20,7 @@ Whilst also going through engineering duties, I would also host Brownbags, a rec
 
 - Research project on **Computing Bianchi Modular Forms** supervised by Research Fellow [**Marc Masdeu**][_mm].
 
-Computing Bianchi Modular Forms was theoretically possible, but nobody had written a program to practically calculate them. The project was based on reading research papers, and implementing algorithms described. The next challenge was optimisation of these advanced algorithms.
+Computing Bianchi Modular Forms was theoretically possible, but nobody had written a program to practically calculate them. The project consisted of reading research papers, and implementing algorithms described. The next challenge was optimisation of these advanced algorithms.
 
 Also see my [Github][_gh] and [my website][_ghp] for full CV.
 

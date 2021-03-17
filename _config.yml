@@ -1,7 +1,6 @@
 # site settings
 # access via {{ site.name }}
 name: Mayur Dave
-author: Mayur Dave
 title: mdave16
 tagline: Personal website of Mayur Dave
 description: Personal website of Mayur Dave, software engineer who enjoys maths and board games.

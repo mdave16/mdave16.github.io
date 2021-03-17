@@ -6,7 +6,7 @@ tags:
 ---
 Follow-up to Learning Python in a new way from Mayur's blog
 
-So far i've got fairly far with pythonchallenge and it's been good fun discovering all these modules and aspects of python i didn't previously know about.
+So far i've got fairly far with PythonChallenge and it's been good fun discovering all these modules and aspects of python i didn't previously know about.
 
 Most of what I do in python or indeed any language is just to solve equations and so it's been particularly fun just learning a language like this.
 

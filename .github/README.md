@@ -10,4 +10,4 @@ A personal website to host my notes.
 
     bundle exec jekyll serve
 
-and preview the site at <http://localhost:4000>
+Preview the site at <http://localhost:4000>

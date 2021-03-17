@@ -12,7 +12,7 @@ While talking to Marc, he told me about a previous Warwick student who had helpe
 
 It was at this moment that I realised that SAGE, Magma, Mathematica and MATLAB are not just the big players, but just a mere handful of them. On Julia's website, we can see benchmarks against various other languages, some which I've used but not for intense maths like JS and Java (or arguably Python), and some which I've only heard about being difficult.
 
-Taking inspiration, I'm thinking about what languages can I branch out to? I've already taken a step towards Julia. I'm thinking of giving Rails a go for my website, and I could also try php? I've heard many bad things about php, but they can't all be true. Could they?!
+Taking inspiration, I'm thinking about what languages can I branch out to? I've already taken a step towards Julia. I'm thinking of giving Rails a go for my website, and I could also try php? There are many bad things about php that I have heard, but they can't all be true. Could they?!
 
 Bash is also one I've been meaning to learn for some time now, so that would be good. There are all the variations of C I have yet to learn. I really only know C (the normal one). Go, Haskel, Lua...
 
