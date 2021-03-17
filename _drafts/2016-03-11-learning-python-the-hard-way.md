@@ -1,6 +1,5 @@
 ---
 title: Learning Python in a new way
-date: 2019-03-27
 tags:
   - Warwick
   - Soft Mathematics

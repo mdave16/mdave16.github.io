@@ -1,6 +1,5 @@
 ---
 title: Digit Theory
-date: 2019-03-27
 tags:
   - Warwick
   - Soft Mathematics
