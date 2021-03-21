@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-GB">
 	<head>
 		<title>Bored?</title>
 		<link rel="stylesheet" type="text/css" href="/assets/css/normalize.css" />
@@ -66,10 +66,7 @@
 			<!--The great tree-->
 			<div style="text-align: center">
 				<a id="tree" href="#">
-					<img
-						src="/assets/images/Tree.jpg"
-						alt="Gandalf awaits..."
-						align="middle"
+					<img src="/assets/images/Tree.jpg" alt="Gandalf awaits..."
 				/></a>
 			</div>
 
@@ -122,21 +119,21 @@
 				function bored() {
 					/*want text and link to change*/
 
-					ln2 = Math.floor(Math.random() * link.length);
-					while (ln == ln2) {
+					let ln2 = Math.floor(Math.random() * link.length);
+					while (ln === ln2) {
 						ln2 = Math.floor(Math.random() * link.length);
 					}
 
-					tn2 = Math.floor(Math.random() * text.length);
-					while (tn == tn2) {
+					let tn2 = Math.floor(Math.random() * text.length);
+					while (tn === tn2) {
 						tn2 = Math.floor(Math.random() * text.length);
 					}
 
-					tn = tn2;
-					ln = ln2;
+					let ln = ln2;
+					let tn = tn2;
 
-					lnk = link[ln];
-					txt = text[tn];
+					let lnk = link[ln];
+					let txt = text[tn];
 
 					console.log(txt + " **-** " + lnk);
 					document.getElementById("tree").setAttribute("href", lnk);
