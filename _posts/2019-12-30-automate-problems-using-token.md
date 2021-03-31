@@ -35,12 +35,12 @@ It is clear existence of a token, and the ongoing work on tokens can slow down t
 ### Examples
 
 Two of the main tools that were developed in-house started off as Token jobs.
-[<img src="https://static.ebayinc.com/static//assets/Uploads/Editor/_resampled/ResizedImageWzMzMCwzMzJd/shipship-logo.png" alt="shipship" title="shipship">]({{link '2019-03-27-shipship'}})
-[ShipShip]({{link '2019-03-27-shipship'}}): We found a problem with coordinating stand ups and deployments with the USA. We took The Token, built a very simple version of the one seen here. We solved the stand up issue and made it easier to deploy. ShipShip has been improved since then, but the difficult first step was a token job.
+[<img src="https://static.ebayinc.com/static//assets/Uploads/Editor/_resampled/ResizedImageWzMzMCwzMzJd/shipship-logo.png" alt="shipship" title="shipship">]({% post_url 2019-03-27-shipship %})
+[ShipShip]({% post_url 2019-03-27-shipship %}): We found a problem with coordinating stand ups and deployments with the USA. We took The Token, built a very simple version of the one seen here. We solved the stand up issue and made it easier to deploy. ShipShip has been improved since then, but the difficult first step was a token job.
 
-[<img src="https://static.ebayinc.com/static/assets/Uploads/Editor/logo.svg" alt="logo" alt="failbot" title="failbot" height=330>]({{link https://www.ebayinc.com/stories/blogs/tech/failbot/}})
+[<img src="https://static.ebayinc.com/static/assets/Uploads/Editor/logo.svg" alt="logo" alt="failbot" title="failbot" height=330>](https://www.ebayinc.com/stories/blogs/tech/failbot/)
 
-[FailBot]({{link https://www.ebayinc.com/stories/blogs/tech/failbot/}}): We had an issue with flaky tests and being unsure if a failure was real or not. Once again, The Token gave us a start with FailBot, which was considerably improved on by later Token jobs.
+[FailBot](https://www.ebayinc.com/stories/blogs/tech/failbot/): We had an issue with flaky tests and being unsure if a failure was real or not. Once again, The Token gave us a start with FailBot, which was considerably improved on by later Token jobs.
 ### Conclusion
 
 All in all, the token has been serving us well. It has certainly helped us find solutions, from keeping track of stories to ensuring we are not blocked by flaky tests.
