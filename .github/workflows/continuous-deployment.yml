@@ -19,7 +19,9 @@ jobs:
         with:
           node-version: 14
       - name: 💎 setup node deps
-        run: npm install --ignore-scripts
+        uses: jaid/action-npm-install@v1.2.1
+      - name: add to path
+        run: echo "node_modules/.bin" >> $GITHUB_PATH
 
       - name: 💎 setup ruby
         uses: ruby/setup-ruby@v1
@@ -29,7 +31,7 @@ jobs:
       - name: 🔨 install dependencies & build site
         uses: limjh16/jekyll-action-ts@v2
         with:
-          enable_cache: false
+          enable_cache: true
           format_output: true
           prettier_opts: '{ "useTabs": true }'
           key: ${{ runner.os }}-${{ hashFiles('**/Gemfile.lock') }}-${{ hashFiles('**/package-lock.json')}}

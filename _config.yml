@@ -67,5 +67,5 @@ uncss:
   files:
     - "**/*.html"
     - "**/*.md"
-  compress: false
+  compress: true
   banner: true
