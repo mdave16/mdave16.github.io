@@ -72,6 +72,7 @@ plugins:
   - jekyll-readme-index
   - jekyll-default-layout
   - jekyll-titles-from-headings
+  - jekyll-time-to-read
 
 uncss:
   stylesheets:

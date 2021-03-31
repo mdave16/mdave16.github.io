@@ -3,11 +3,11 @@ title: Blog Posts
 ---
 
 <ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-      <br>  {{ post.tags | array_to_sentence_string }}
-      {{ post.excerpt }}
-    </li>
-  {% endfor %}
+	{% for post in site.posts %}
+	<li>
+		<a href="{{ post.url }}">{{ post.title }}</a> (about {{ post.content | reading_time_as_s }})
+		<br />
+		{{ post.tags | array_to_sentence_string }} {{ post.excerpt }}
+	</li>
+	{% endfor %}
 </ul>
