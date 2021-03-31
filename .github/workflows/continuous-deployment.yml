@@ -10,6 +10,9 @@ jobs:
     steps:
       - name: 📂 setup
         uses: actions/checkout@v2
+        with: 
+          ref: main
+          submodules: true
 
       - name: 💎 setup ruby
         uses: ruby/setup-ruby@v1
