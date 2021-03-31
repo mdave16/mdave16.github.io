@@ -14,7 +14,7 @@
     "url": "https://github.com/mdave16/mdave16.github.io/issues"
   },
   "homepage": "https://mdave16.github.io",
-  "devDependencies": {
+  "dependencies": {
     "uncss": "^0.17.3"
   }
 }
