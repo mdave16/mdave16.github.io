@@ -60,3 +60,14 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jemoji
+
+uncss:
+  stylesheets:
+    - assets/css/blog.css
+    - assets/css/main.css
+    - assets/css/skeleton.css
+  files:
+    - "**/*.html"
+    - "**/*.md"
+  compress: false
+  banner: false
