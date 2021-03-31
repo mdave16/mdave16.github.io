@@ -4,11 +4,8 @@
   "description": "",
   "main": "",
   "scripts": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mdave16/mdave16.github.io.git"
-  },
-  "author": "",
+  "repository": "git+https://github.com/mdave16/mdave16.github.io.git",
+  "author": "mdave16 <mdave3927@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mdave16/mdave16.github.io/issues"
