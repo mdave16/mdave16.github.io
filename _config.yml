@@ -68,4 +68,4 @@ uncss:
     - "**/*.html"
     - "**/*.md"
   compress: false
-  banner: false
+  banner: true
