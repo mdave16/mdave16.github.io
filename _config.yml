@@ -43,6 +43,7 @@ kramdown:
   syntax_highlighter: rouge
   syntax_highlighter_opts:
     css_class: "highlight"
+theme: null
 
 collections:
   side_projects:
@@ -57,9 +58,20 @@ side_projects:
   - /stunning-bassoon
 
 plugins:
+  - jekyll-github-metadata
+  - jekyll-seo-tag
   - jekyll-feed
   - jekyll-sitemap
   - jemoji
+  - jekyll-coffeescript
+  - jekyll-commonmark-ghpages
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-default-layout
+  - jekyll-titles-from-headings
 
 uncss:
   stylesheets:
