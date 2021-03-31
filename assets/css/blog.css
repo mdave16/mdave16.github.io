@@ -1,11 +1,12 @@
 > mdave16.github.io@1.0.0 uncss /home/runner/work/mdave16.github.io/mdave16.github.io
-> uncss "/tmp/uncssrc20210331-1930-1a08fn5" "/home/runner/work/mdave16.github.io/mdave16.github.io/_site/**/*.html" "/home/runner/work/mdave16.github.io/mdave16.github.io/_site/**/*.md"
+> uncss --trace-warnings "--uncssrc" "/tmp/uncssrc20210331-2001-1io0hfj" "/home/runner/work/mdave16.github.io/mdave16.github.io/_site/**/*.html" "/home/runner/work/mdave16.github.io/mdave16.github.io/_site/**/*.md"
 
-(node:1945) UnhandledPromiseRejectionWarning: Error: UnCSS: could not open /home/runner/work/mdave16.github.io/mdave16.github.io/home/runner/work/mdave16.github.io/mdave16.github.io/_site/2019/03/27/shipship/assets/css/skeleton.css
-    at /home/runner/work/mdave16.github.io/mdave16.github.io/node_modules/uncss/src/utility.js:145:15
-    at Array.map (<anonymous>)
-    at Object.readStylesheets (/home/runner/work/mdave16.github.io/mdave16.github.io/node_modules/uncss/src/utility.js:122:30)
-    at getCSS (/home/runner/work/mdave16.github.io/mdave16.github.io/node_modules/uncss/src/uncss.js:99:49)
-(Use `node --trace-warnings ...` to show where the warning was created)
-(node:1945) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 1)
-(node:1945) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+/*** uncss> filename: /home/runner/work/mdave16.github.io/mdave16.github.io/_site/assets/css/blog.css ***/
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+p {
+  font-size: 3rem
+}
