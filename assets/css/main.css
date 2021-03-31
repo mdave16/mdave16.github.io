@@ -1,16 +1,1 @@
-/*** uncss> filename: /home/runner/work/mdave16.github.io/mdave16.github.io/_site/assets/css/main.css ***/
-.svg-icon {
-	width: 16px;
-	height: 16px;
-	display: inline-block;
-	padding-right: 5px;
-	vertical-align: text-top;
-}
-
-.intro {
-	text-align: center;
-}
-
-.hidden {
-	display: none;
-}
+.svg-icon{width:16px;height:16px;display:inline-block;padding-right:5px;vertical-align:text-top}.intro{text-align:center}.hidden{display:none}
