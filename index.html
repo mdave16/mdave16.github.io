@@ -12,13 +12,18 @@ title: Mayur Dave
 </p>
 
 <p>Here are some of the things I'm currently working on:</p>
+{% assign projects = site.github.public_repositories 
+	| where_exp: "project", "project.homepage" 
+	| where_exp: "project", "project.fork == false" 
+	| where_exp: "project", "project.homepage != ''" %}
+{% assign one_page_projects = "Blog, Tic Tac Toe, Tic Tac Tic Tac Toe" | split: ", " %}
 
 <ul>
-	<!-- <li><a href="/bored">Bored button</a></li> -->
-	<li><a href="/tic-tac-toe">Tic Tac Toe</a></li>
-	<li><a href="/tic-tac-tic-tac-toe">Tic Tac Tic Tac Toe</a></li>
-	<li><a href="/cryptography">Cryptography</a></li>
-	<li><a href="/stunning-bassoon">Area of generic shape</a></li>
+	{% for project in one_page_projects %}
+	<li><a href="/{{project | slugify}}">{{project}}</a></li>
+	{% endfor %} {% for repository in projects %}
+	<li><a href="{{repository.homepage}}">{{repository.name | strip }}</a></li>
+	{% endfor %}
 </ul>
 
 Give me <a href="/contact">feedback</a> if there is anything wrong, or if you
