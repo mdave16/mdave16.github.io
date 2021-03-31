@@ -1,0 +1,20 @@
+{
+  "name": "mdave16.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdave16/mdave16.github.io.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mdave16/mdave16.github.io/issues"
+  },
+  "homepage": "https://mdave16.github.io",
+  "devDependencies": {
+    "uncss": "^0.17.3"
+  }
+}
