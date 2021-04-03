@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: 14
       - name: 💎 setup node deps
-        uses: jaid/action-npm-install@v1.2.1
+        uses: jaid/action-npm-install@v1.2.4
       - name: add to path
         run: echo "node_modules/.bin" >> $GITHUB_PATH
 
