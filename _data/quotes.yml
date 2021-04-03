@@ -26,7 +26,7 @@
     no lecture.
   person: Vladim Lozin
   time: 2015
-- quote: Sorry for the advertisement of Air France, please ignore it.
+- quote: Sorry for the advertisement for Air France, please ignore it.
   person: Vladim Lozin
   time: 2015
 - quote: Brace yourself and work hard.
@@ -58,12 +58,10 @@
   quote: This is terrible, but you all know what I mean. Right?
   person: Haluk Sengun
   time: 2016
-- quote: Tables were around but not published, like secret societies. You could only get
-    them if you had the right contacts.
+- quote: Tables were around but not published, like secret societies. You could only get them if you had the right contacts.
   person: Ariel Pacetti
   time: 2016
-- quote: You might think that this looks very easy, and it is! That's why I was able to
-    solve it.
+- quote: You might think that this looks very easy, and it is! That's why I was able to solve it.
   person: Denis Simon
   time: 2016
 - quote: Hatcher is like a bad filmmaker!
@@ -78,7 +76,7 @@
 - quote: It was given many very humble names... for instance 'the heaven', 'Atlas', 'God'...
   person: Michalis Sialaros
   time: 2016
-- quote: I'll just skip a few examples, and about 6 centuries of history.
+- quote: I'll just skip a few examples and about 6 centuries of history.
   person: Michalis Sialaros
   time: 2016
 - quote: Diophantus didn't know how to go past the 6th power.
@@ -89,11 +87,10 @@
   quote: If it doesn't have it, it's not a good book shop
   person: Robin Wilson
   time: 2016
-- quote: You could carry on by induction, or just write 'and so on'...
+- quote: You could carry on by induction, or just write 'and so on...'
   person: Robin Wilson
   time: 2016
-- quote: History went literally out of the window! Well not literally, because we were
-    in a basement and we didn't have windows.
+- quote: History went literally out of the window! Well not literally, because we were in a basement and we didn't have windows.
   person: Simon Singh
   time: 2016
 - quote: I am a great addition to your country.
@@ -124,15 +121,14 @@
 - quote: Whenever you have a problem, just exclude it from your definitions.
   person: Charudatta Hajarnavis
   time: 2016
-- scenario: Towards end of module
+- scenario: Towards the end of module
   quote: So we've finally finished the preliminaries for the course.
   person: Charudatta Hajarnavis
   time: 2016
-- quote: There is something wrong... with the board, or the chalk.
+- quote: There is something wrong... with the board or the chalk.
   person: Guhan Harikumar
   time: 2016
-- quote: The proof is obvious, more or less. In fact, it's so obvious that I'll risk writing
-    it down.
+- quote: The proof is obvious, more or less. In fact, it's so obvious that I'll risk writing it down.
   person: Mark Pollicott
   time: 2016
 - quote: Any questions? We still have 30 seconds.
@@ -160,8 +156,7 @@
   quote: Probably the most important theorem in the whole world.
   person: Nicolas Mascot
   time: 2015
-- quote: I'm going to go for the German tradition. Don't worry, I'm not German. I shouldn't
-    say that, Germans are adorable people. I do like them.
+- quote: I'm going to go for the German tradition. Don't worry, I'm not German. I shouldn't say that; Germans are adorable people. I do like them.
   person: Nicolas Mascot
   time: 2015
 - quote: It's a bit tedious, I won't go through the details. Please believe me.
@@ -189,15 +184,13 @@
 - quote: Too early for the dolphins to start coming.
   person: Samir Siksek
   time: 2015
-- quote: I'm surprised you came back, know what this means? The other lectureres are doing
-    an even worse job.
+- quote: I'm surprised you came back, know what this means? The other lecturers are doing an even worse job.
   person: Samir Siksek
   time: 2015
 - quote: Let's keep the lecture unclear, better than gross.
   person: Samir Siksek
   time: 2015
-- quote: 'Has it been boring so far? [Us: no] Damn! I was going to say we''re getting
-    to the interesting stuff, but I see you have a low standard of lectures.'
+- quote: 'Has it been boring so far? [Us: no] Damn! I was going to say we're getting to the interesting stuff, but I see you have a low standard of lectures.'
   person: Samir Siksek
   time: 2015
 - scenario: On moving assignment deadlines back
@@ -213,7 +206,7 @@
   quote: You were meant to scream!
   person: Samir Siksek
   time: 2015
-- quote: Is that ok? Well it's too late, I've rubbed it out.
+- quote: Is that ok? Well, it's too late, I've rubbed it out.
   person: Samir Siksek
   time: 2015
 - scenario: To me
@@ -243,7 +236,7 @@
 - quote: My teeth are so musical!
   person: Alex Holmes
   time: 2017
-- quote: I'm in middle of a rant, don't make jokes!
+- quote: I'm in the middle of a rant, don't make jokes!
   person: Mayur Dave
   time: 2017
 - quote: So far, so trivial
@@ -257,7 +250,7 @@
     And then I'll spend 5 minutes apologising.
   person: Miles Ried
   time: 2017
-- quote: Proof by concensus.
+- quote: Proof by consensus.
   person: Vadim Lozin
   time: 2017
 - quote: If there was a real fire, we were all going to burn here.
@@ -271,7 +264,7 @@
   person: Trevor Wooley
   time: 2016
 - scenario: 'Asher: The Arctic is melting, which is obviously really bad for the Netherlands.'
-  quote: Well, can't they move to belgium, and noone would know the difference.
+  quote: Well, can't they move to Belgium, and no one would know the difference.
   person: Dan Jovic
   time: 2017
 - quote: In retrospect, I don't know why I thought you'd be juggling.
@@ -296,18 +289,17 @@
 - quote: If anything, I'll be in prison, so it'll be great!
   person: Chris Hickey
   time: 2017
-- quote: Dave wood is the most human man in the department, wait no Samir! Actually Samir
-    isn't human, he's a magical pixie.
+- quote: Dave wood is the most human man in the department, wait no Samir! Actually Samir isn't human, he's a magical pixie.
   person: Asher Pearl
   time: 2017
 - quote: Take these equations, and then by a miracle, everything works! – Proof by miracle!
   person: Daniel Coutand
   time: 2015
 - scenario: I still don't understand why this is funny.
-  quote: Oh no! I've just spilled Proseco down my shirt!
+  quote: Oh no! I've just spilled Prosecco down my shirt!
   person: Asher Peal
   time: 2017
-- quote: The Steinberg character is very important. Hmm how can I get this across.. Okay.
+- quote: The Steinberg character is very important. Hmm, how can I get this across... Okay.
     If the Steinberg Character didn't exist I wouldn't be able to feed my family right
     now.
   person: Dmitriy Rumynin
@@ -321,6 +313,6 @@
 - quote: Thursday doesn't fit into a clear category
   person: Konstantin Shvydkyy
   time: 2021
-- quote: Cleaned piss is okay, because that's like tap water
+- quote: Cleaned piss is okay because that's like tap water
   person: Mayur Dave
   time: 2021

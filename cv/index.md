@@ -8,8 +8,8 @@ title: CV
   - **Software Engineer Intern** (Oct 17 -- March 18)
   - **Full Stack Polyglot Software Engineer** (March 18 -- Present)
 
-As a polyglot and a full stack software engineer, I would be working everywhere in the stack and was able to pick up languages and frameworks with relative ease.
-Whilst also going through engineering duties, I would also host Brownbags, a recurring section where talks would be given on new technologies, in order to keep the team innovative.
+As a polyglot and a full-stack software engineer, I would be working everywhere in the stack and was able to pick up languages and frameworks with relative ease.
+Whilst also going through engineering duties, I would also host Brown bags, a recurring section where talks would be given on new technologies, to keep the team innovative.
 
 ## Education
 
@@ -20,9 +20,9 @@ Whilst also going through engineering duties, I would also host Brownbags, a rec
 
 - Research project on **Computing Bianchi Modular Forms** supervised by Research Fellow [**Marc Masdeu**][_mm].
 
-Computing Bianchi Modular Forms was theoretically possible, but nobody had written a program to practically calculate them. The project consisted of reading research papers, and implementing algorithms described. The next challenge was optimisation of these advanced algorithms.
+Computing Bianchi Modular Forms was theoretically possible, but nobody had written a program to practically calculate them. The project consisted of reading research papers and implementing the algorithms described. The next challenge was the optimisation of these advanced algorithms.
 
-Also see my [Github][_gh] and [my website][_ghp] for full CV.
+Also, see my [Github][_gh] and [my website][_ghp] for the full CV.
 
 ## Talks
 
@@ -38,7 +38,7 @@ Also see my [Github][_gh] and [my website][_ghp] for full CV.
 
 - **Languages**
 
-  - **English**, **Gujarati** and **Hindi** as native languages.
+  - **English**, **Gujarati**, and **Hindi** as native languages.
 
 - **Computer skills**
 
@@ -51,7 +51,7 @@ Also see my [Github][_gh] and [my website][_ghp] for full CV.
   - Outdoor First Aid (Wilderness Development)
   - First Aid (St Johns)
 
-- **British Citizen** with a full driving licence
+- **British Citizen** with a full driving license
 
 - **Post Gold Officer** with [Warwick Duke of Edinburgh Society][_wdofe] (15 – 17)
 - **Project Leader** for the [**Technology Volunteers**][_tv] (16 – 17)
