@@ -12,12 +12,10 @@ Here are some of the things I'm currently working on:
 	| where_exp: "project", "project.homepage"
 	| where_exp: "project", "project.fork == false"
 	| where_exp: "project", "project.homepage != ''" %}
-
-{% for project in site.data.projects %}
-- [{{project.name | strip }}]({{ project.homepage }}){% endfor %}{% for repository in projects %}
-- [{{repository.name | strip }}]({{ repository.homepage }}){% endfor %}
-
-[Warwick Blog](http://blogs.warwick.ac.uk/mdave/)
+{% assign concat_list = site.data.projects | concat: projects %}
+{% for project in concat_list  %}
+- [{{project.name}}]({{project.homepage}}){% endfor %}
+- [Warwick Blog](http://blogs.warwick.ac.uk/mdave/)
 
 Give me [feedback](_contact) if there is anything wrong, or if you
 feel there is something I could change!
