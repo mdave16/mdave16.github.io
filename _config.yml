@@ -73,9 +73,17 @@ plugins:
   - jekyll-default-layout
   - jekyll-titles-from-headings
   - jekyll-time-to-read
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  startings: all
+  profile: false
+  blanklines: true
 
 uncss:
   stylesheets:
+    - assets/css/normalize.css
     - assets/css/blog.css
     - assets/css/main.css
     - assets/css/skeleton.css

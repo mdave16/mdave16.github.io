@@ -1,11 +1,17 @@
+---
+layout: compress
+---
 <!DOCTYPE html>
 <html lang="en-GB">
 	<head>
 		<title>{{ page.title }}</title>
-		<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="/assets/css/skeleton.css" />
-		<link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
-		<link rel="shortcut icon" href="/assets/images/tree.ico" />
+		<link rel="stylesheet" type="text/css" href="assets/css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/skeleton.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+		{% if page.js %}
+		<script src='assets/js/{{ page.js }}.js'></script>
+		{% endif %}
+		<link rel="shortcut icon" href="assets/images/tree.ico" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		{% seo %}
 	</head>
