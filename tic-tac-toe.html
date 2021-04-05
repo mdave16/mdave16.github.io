@@ -2,14 +2,11 @@
 <html lang="en-GB">
 	<head>
 		<title>Tic Tac Toe</title>
-		<link
-			rel="stylesheet"
-			type="text/css"
-			href="https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css"
-		/>
-		<link rel="stylesheet" type="text/css" href="/assets/css/skeleton.css" />
-		<link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
-		<link rel="shortcut icon" href="/assets/images/tree.ico" />
+		<link rel="stylesheet" type="text/css" href="assets/css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/skeleton.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+		<script src="assets/js/tic-tac-toe.js"></script>
+		<link rel="shortcut icon" href="assets/images/tree.ico" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!-- Begin Jekyll SEO tag v2.7.1 -->
 		<title>Tic Tac Toe | Mayur Dave</title>
@@ -71,7 +68,6 @@
 					padding: 10px;
 					grid-gap: 10px;
 				}
-
 				.cell {
 					background-color: rgba(255, 255, 255, 0.8);
 					padding: 20px;
@@ -79,92 +75,23 @@
 					text-align: center;
 				}
 			</style>
-
 			<div class="grid" id="grid">
 				<div class="cell" data-played onclick="play(event.target)"></div>
-
 				<div class="cell" data-played onclick="play(event.target)"></div>
-
 				<div class="cell" data-played onclick="play(event.target)"></div>
-
 				<div class="cell" data-played onclick="play(event.target)"></div>
-
 				<div class="cell" data-played onclick="play(event.target)"></div>
-
 				<div class="cell" data-played onclick="play(event.target)"></div>
-
 				<div class="cell" data-played onclick="play(event.target)"></div>
-
 				<div class="cell" data-played onclick="play(event.target)"></div>
-
 				<div class="cell" data-played onclick="play(event.target)"></div>
 			</div>
-
 			<div id="game-overlay" class="hidden">
-				<span id="info"></span>
-				<span id="score"></span>
+				<span id="info"></span> <span id="score"></span>
 				<button class="button-primary" id="reset-button" onclick="reset()">
 					Reset
 				</button>
 			</div>
-
-			<script>
-				let player = "X";
-				let score = { X: 0, O: 0 };
-				const winningCombos = [
-					// horizontal
-					[0, 1, 2],
-					[3, 4, 5],
-					[6, 7, 8],
-					// vertical
-					[0, 3, 6],
-					[1, 4, 7],
-					[2, 5, 8],
-					//diagonal
-					[0, 4, 8],
-					[2, 4, 6],
-				];
-				const gameOverlay = document.getElementById("game-overlay");
-				const cells = Array.from(document.getElementsByClassName("cell"));
-				const info = document.getElementById("info");
-				const scoreDisplay = document.getElementById("score");
-
-				const winner = () => {
-					const grid = cells.map((cell) => cell.dataset.played);
-					const combo = winningCombos.filter(
-						(combo) =>
-							grid[combo[0]] === grid[combo[1]] &&
-							grid[combo[0]] === grid[combo[2]] &&
-							grid[combo[0]] !== ""
-					);
-					return combo.length > 0;
-				};
-				const over = () =>
-					cells.map((c) => c.dataset.played).every((c) => c !== "");
-				const reset = () => {
-					cells.map((cell) => (cell.dataset.played = ""));
-					gameOverlay.classList.toggle("hidden");
-				};
-				const play = (cell) => {
-					if (!gameOverlay.classList.contains("hidden")) {
-						return null;
-					}
-					if (cell.dataset.played === "") {
-						cell.dataset.played = player;
-						if (winner()) {
-							gameOverlay.classList.toggle("hidden");
-							info.innerText = `Congratulations! The winner is: ${player}.`;
-							score[player]++;
-							scoreDisplay.innerText = `Current score: X: ${score["X"]} – O: ${score["O"]}`;
-						} else if (over()) {
-							gameOverlay.classList.toggle("hidden");
-							info.innerText = `Game over. Try again.`;
-						} else {
-							player = player === "X" ? "O" : "X";
-						}
-					}
-				};
-			</script>
 			<footer>
 				<div class="row">
 					<a class="three columns" href="/contact">Leave Feedback</a>
