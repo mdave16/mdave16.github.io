@@ -12,7 +12,7 @@ Here are some of the things I'm currently working on:
 	| where_exp: "project", "project.homepage"
 	| where_exp: "project", "project.fork == false"
 	| where_exp: "project", "project.homepage != ''" %}
-{% assign concat_list = site.data.projects | concat: projects %}
+{% assign concat_list = projects | concat: site.data.projects %}
 {% for project in concat_list  %}
 - [{{project.name}}]({{project.homepage}}){% endfor %}
 - [Warwick Blog](http://blogs.warwick.ac.uk/mdave/)
