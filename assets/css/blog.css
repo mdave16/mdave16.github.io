@@ -3,6 +3,6 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-p {
+p, li {
   font-size: 3rem
 }
