@@ -5,8 +5,6 @@ require 'tempfile'
 require 'json'
 
 Jekyll::Hooks.register(:site, :post_write) do |site|
-  next if ENV['JEKYLL_ENV'] != 'production'
-
   print 'UnCSS'.rjust(18), ': '
   config = site.config['uncss'] || {}
 
