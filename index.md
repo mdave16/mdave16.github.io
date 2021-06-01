@@ -13,12 +13,7 @@ Here are some of the things I'm currently working on:
 	| where_exp: "project", "project.fork == false"
 	| where_exp: "project", "project.homepage != ''" %}
 {% assign concat_list = projects | concat: site.data.projects %}
-{%- for project in concat_list  %}
-- <a href="{{project.homepage}}">{{ project.name }}</a>
-{%- endfor -%}
-
-{{}}
-
+<ul>{%- for project in concat_list  -%}<li><a href="{{project.homepage}}">{{ project.name }}</a></li>{%- endfor -%}</ul>
 Give me [feedback](_contact) if there is anything wrong, or if you
 feel there is something I could change!
 
