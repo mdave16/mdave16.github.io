@@ -13,9 +13,6 @@ Here are some of the things I'm currently working on:
 	| where_exp: "project", "project.fork == false"
 	| where_exp: "project", "project.homepage != ''" %}
 {% assign concat_list = projects | concat: site.data.projects %}
-- [Warwick Blog](http://blogs.warwick.ac.uk/mdave/)
-<!-- whitespacing will be off in cryptography if we use markdown for this -->
-{}
 {%- for project in concat_list  %}
 - <a href="{{project.homepage}}">{{ project.name }}</a>
 {%- endfor -%}
