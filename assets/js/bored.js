@@ -1,4 +1,4 @@
-link = [
+const link = [
 	//Add more to these in the same format
 	"http://adarkroom.doublespeakgames.com/",
 	"https://cardgames.io/",
@@ -22,40 +22,34 @@ link = [
 	"http://www.theuselessweb.com/",
 	"http://www.theproofistrivial.com/",
 	"https://smartypins.withgoogle.com/",
-];
+]
 
-text = [
+const text = [
 	//These are texts that go in the button
 	"Let's go Gandalf!",
 	"Go boldly where no man has gone before!",
 	"To infinity and beyond...",
 	"One small step for man, one giant leap for mankind...",
 	"I'm going on an adventure!",
-];
+]
 
-ln = -1;
-tn = 0;
+function randomElement(array) {
+	return array[Math.floor(Math.random() * array.length)]
+}
+
+function randomNot(array, value) {
+	return randomElement(array.filter(x => x !== value))
+}
 
 function bored() {
-	/*want text and link to change*/
-
-	let ln2 = Math.floor(Math.random() * link.length);
-	while (ln === ln2) {
-		ln2 = Math.floor(Math.random() * link.length);
-	}
-
-	let tn2 = Math.floor(Math.random() * text.length);
-	while (tn === tn2) {
-		tn2 = Math.floor(Math.random() * text.length);
-	}
-
-	let ln = ln2;
-	let tn = tn2;
-
-	let lnk = link[ln];
-	let txt = text[tn];
-
-	console.log(txt + " **-** " + lnk);
-	document.getElementById("tree").setAttribute("href", lnk);
-	document.getElementById("but").innerHTML = txt;
+	document
+		.getElementById("tree")
+		.setAttribute(
+			"href",
+			randomNot(link, document.getElementById("tree").getAttribute("href"))
+		)
+	document.getElementById("but").innerHTML = randomNot(
+		text,
+		document.getElementById("but").innerHTML.trim()
+	)
 }
