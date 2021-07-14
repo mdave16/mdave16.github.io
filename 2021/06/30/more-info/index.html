@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+	<head>
+		<title>Information Systems continued</title>
+		<link rel="stylesheet" type="text/css" href="/assets/css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="/assets/css/skeleton.css" />
+		<link rel="stylesheet" type="text/css" href="/assets/css/blog.css" />
+		<link rel="shortcut icon" href="/assets/images/tree.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- Begin Jekyll SEO tag v2.7.1 -->
+		<title>Information Systems continued | Mayur Dave</title>
+		<meta name="generator" content="Jekyll v3.9.0" />
+		<meta property="og:title" content="Information Systems continued" />
+		<meta property="og:locale" content="en_GB" />
+		<meta
+			name="description"
+			content="This is a follow up post on ‘Information Systems’. In order to think about the different systems available to us and their pros and cons. But rather, we can think of this as a data problem."
+		/>
+		<meta
+			property="og:description"
+			content="This is a follow up post on ‘Information Systems’. In order to think about the different systems available to us and their pros and cons. But rather, we can think of this as a data problem."
+		/>
+		<link
+			rel="canonical"
+			href="http://mdave16.github.io/2021/06/30/more-info/"
+		/>
+		<meta
+			property="og:url"
+			content="http://mdave16.github.io/2021/06/30/more-info/"
+		/>
+		<meta property="og:site_name" content="Mayur Dave" />
+		<meta property="og:type" content="article" />
+		<meta
+			property="article:published_time"
+			content="2021-06-30T00:00:00+00:00"
+		/>
+		<meta name="twitter:card" content="summary" />
+		<meta property="twitter:title" content="Information Systems continued" />
+		<meta name="twitter:site" content="@mdave248" />
+		<meta name="twitter:creator" content="@mdave248" />
+		<script type="application/ld+json">
+			{
+				"mainEntityOfPage": {
+					"@type": "WebPage",
+					"@id": "http://mdave16.github.io/2021/06/30/more-info/"
+				},
+				"description": "This is a follow up post on ‘Information Systems’. In order to think about the different systems available to us and their pros and cons. But rather, we can think of this as a data problem.",
+				"@type": "BlogPosting",
+				"publisher": {
+					"@type": "Organization",
+					"logo": {
+						"@type": "ImageObject",
+						"url": "http://mdave16.github.io/assets/images/tree.ico"
+					}
+				},
+				"url": "http://mdave16.github.io/2021/06/30/more-info/",
+				"headline": "Information Systems continued",
+				"dateModified": "2021-06-30T00:00:00+00:00",
+				"datePublished": "2021-06-30T00:00:00+00:00",
+				"@context": "https://schema.org"
+			}
+		</script>
+		<!-- End Jekyll SEO tag -->
+	</head>
+	<body>
+		<div class="container">
+			<h1>Information Systems continued</h1>
+
+			<p>
+				This is a follow up post on ‘Information Systems’. In order to think
+				about the different systems available to us and their pros and cons. But
+				rather, we can think of this as a data problem.
+			</p>
+
+			<p>
+				Imagine having lots of different databases, each database has a cost of
+				retrieving information based on various factors, and there is a cost to
+				lookup which tables are in which database. We are trying to minimise the
+				total cost of retrieving information from the system. With the added
+				requirement that access should be role based.
+			</p>
+
+			<p>
+				Now the problem should be simpler to solve and think about, but before
+				we do, I want to convince you that this is the correct problem to solve.
+			</p>
+
+			<p>
+				Consider git commit logs, or code, or jira, or any other system
+				mentioned in the previous post. Ultimately, this is a datasource, that
+				can be edited and read from. For this reason, I’m going to treat them
+				like databases. Let’s take code as an example, to see what I mean by the
+				costs.
+			</p>
+
+			<p>
+				The cost of looking up information from the code is how fast it takes a
+				developer to find information they are after within the code. If a team
+				places high emphasis on readable code, it is to lower this cost, as much
+				as possible. The reason we use design patterns and not spaghetti code is
+				purely to make the code as easy as it could be to read, and lower the
+				cost of looking up information from it. The information is generally
+				valuable.
+			</p>
+
+			<p>
+				What is valuable information? I’m still not completely certain, and
+				information which is valuable to me as an engineer is maybe less
+				valuable to a product manager, or a manager. I consider value to be a
+				mixture of the following:
+			</p>
+			<ul>
+				<li>reliability, how likely is this information going to be correct</li>
+				<li>
+					referenciability, can this information lead me to other information
+				</li>
+			</ul>
+
+			<p>
+				I personally place the most emphasis on reliability and less on
+				referenciability. Something which references the reliable information is
+				less valuable than the reliable information itself. Each layer of
+				reference, makes it less valuable.
+			</p>
+
+			<p>
+				Hopefully now, you are on board with treating this as a data problem. We
+				have some statements which we know from common sense and engineering
+				practices.
+			</p>
+
+			<ul>
+				<li>
+					<p>
+						The fewer indicies in a datasource, the easier search is.
+						Ultimately, we are iterating over all indicies and filtering out as
+						much as possible. The less in each datasource the faster search is.
+					</p>
+				</li>
+				<li>
+					<p>
+						Writing data to multiple data sources without a multiple-update
+						system setup leads to inconsistencies of data, and then it becomes
+						hard to know which data is correct.
+					</p>
+				</li>
+				<li>
+					<p>
+						Having data relevant to a role being in the datasources that that
+						role can access is good. (Think about replacing role with an
+						application to see if this makes sense from an architecture
+						standpoint)
+					</p>
+				</li>
+				<li>
+					<p>
+						Giving struture to the data makes it easier to search, but this also
+						imposes some standard which may be hard to change (think of a select
+						from a structured table vs finding something from a document store)
+					</p>
+				</li>
+			</ul>
+
+			<p>
+				Despite knowing these and probably more rules about data management, we
+				often forget when it comes to these information systems. We often put
+				all our information in an unstructured brain dump in at least one
+				central system, but also write the same information in other systems.
+				Perhaps after finishing a project, someone will write a summary in the
+				readme file, another brain dump in confluence and yet another in a
+				recorded meeting. Sure enough the third is static and won’t be subject
+				to edits, but it is not going to keep up with the project, and will be
+				the slowest to gain information from.
+			</p>
+
+			<p>
+				If you want to discuss this topic, feel free to
+				<a href="/contact">leave me a message</a> or
+				<a
+					href="https://mobile.twitter.com/search?q=mdave16 Information Systems continued"
+					>discuss on twitter.</a
+				>
+			</p>
+		</div>
+	</body>
+</html>
