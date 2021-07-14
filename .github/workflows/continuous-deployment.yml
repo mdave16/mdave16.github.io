@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: 📂 setup
         uses: actions/checkout@v2.3.4
-        with: 
+        with:
           ref: main
           submodules: true
 
