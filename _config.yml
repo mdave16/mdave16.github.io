@@ -94,3 +94,8 @@ uncss:
     - "**/*.md"
   compress: true
   banner: true
+
+
+exclude:
+  - package.json
+  - package-lock.json
