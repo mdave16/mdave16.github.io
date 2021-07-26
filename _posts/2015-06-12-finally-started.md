@@ -11,7 +11,7 @@ Finally, started blogging again, this time with purpose. I and a few of my frien
 
 2) Using mathematics we have learnt so far, completely rigorously, trying to show that a function will behave in a certain way at certain points
 
-3) Numerical analysis, once all our deductions have been used it
+3) Numerical analysis, once all our deductions have been used it might be useful to analyse what we do.
 
 4) Graphing and changing all the variables. 'Maths by Computer' saving the day, also with the above.
 

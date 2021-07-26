@@ -1,10 +1,9 @@
 ---
-title: Span of Multisets	
+title: New Website?	
 tags:
   - Warwick
   - Soft Mathematics
 ---
- New Website?	
 
 So I've had a website on pythonanywhere for a while now. I've enjoyed using flask but it does have it's limitations. I feel there could be a greater community working at giving help, and in general just to compile.
 

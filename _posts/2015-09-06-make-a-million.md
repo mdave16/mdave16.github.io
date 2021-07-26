@@ -7,7 +7,7 @@ tags:
 
 Hey!
 
-So I did some work finally! Check the link above.
+So I did some work finally! Check the make a million page from my notes.
 
 If you are interested, check out the pdf file, it should explain everything.
 

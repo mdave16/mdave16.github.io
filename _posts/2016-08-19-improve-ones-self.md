@@ -1,11 +1,10 @@
 ---
-title: Span of Multisets	
+title: Improve One's Self
 tags:
   - Warwick
   - Soft Mathematics
 ---
-  Improve One's Self	
-
+  	
 I was talking to my friend Jack, and he reminded me that to be really giving 100% as a mathematician, or as whatever you are, you really need to be giving 100% on everything. You need to be eating well, you need to be sleeping well, you need to be relaxing well, to work well.
 
 The main tip he offered me, was to make a calendar. Each day you achieve your goal, you cross that day off on the calendar. Once you achieve 30 days of success, you've made it a habit! (with hope). Each day you don't, you restart the count. Making it more and more painful. It only requires some initial will power, which he's willing to provide for me.

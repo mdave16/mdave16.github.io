@@ -1,10 +1,9 @@
 ---
-title: Make A Million
+title: A glimpse of a rabbit
 tags:
   - Warwick
   - Soft Mathematics
 ---
- A glimpse of a rabbit
 
 I just started my URSS with being given a complicated title and some papers I don't understand. I'm told it's actually very simple, but from the outside it certainly doesn't feel so.
 

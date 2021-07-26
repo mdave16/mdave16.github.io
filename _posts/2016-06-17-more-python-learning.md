@@ -4,7 +4,7 @@ tags:
   - Warwick
   - Soft Mathematics
 ---
-Follow-up to Learning Python in a new way from Mayur's blog
+Follow-up to Learning Python in a new way
 
 So far i've got fairly far with PythonChallenge and it's been good fun discovering all these modules and aspects of python i didn't previously know about.
 

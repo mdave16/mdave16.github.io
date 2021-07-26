@@ -1,12 +1,10 @@
 ---
-title: Span of Multisets	
+title: Catching up with the rabbit
 tags:
   - Warwick
   - Soft Mathematics
 ---
- Catching up with the rabbit	
-
-Follow-up to A glimpse of a rabbit from Mayur's blog
+Follow-up to A glimpse of a rabbit
 
 So the last time I wrote about this, I was simply reading up on the mathematics behind what I was doing. I started programming in SAGE and as always there are a few hiccups with it.
 

@@ -4,7 +4,7 @@ tags:
   - Warwick
   - Soft Mathematics
 ---
-Follow-up to Python Maths from Mayur's blog
+Follow-up to Python Maths
 
 Having taken some time, I've figured out the mysterious ways of GitHub and finally ported this module to there.
 
