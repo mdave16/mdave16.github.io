@@ -58,16 +58,16 @@ Also, see my [Github][_gh] and [my website][_ghp] for the full CV.
 
 <!--- All the links -->
 
-[_wwk]: http://www2.warwick.ac.uk/fac/sci/maths "Warwick Maths Institute"
-[_stp]: http://www.st-pauls.leicester.sch.uk/ "St Pauls Leicester"
-[_lgs]: http://www.leicestergrammar.org.uk/ "Leicester Grammar"
-[_mm]: http://mat.uab.cat/~masdeu "Marc Masdeu"
-[_wms]: http://warwickmaths.org/ "Warwick Maths Society"
-[_tv]: http://www2.warwick.ac.uk/about/community/volunteers/volunteering/techvols/ "Technology Volunteers"
+[_wwk]: https://www2.warwick.ac.uk/fac/sci/maths "Warwick Maths Institute"
+[_stp]: https://www.st-pauls.leicester.sch.uk/ "St Pauls Leicester"
+[_lgs]: https://www.leicestergrammar.org.uk/ "Leicester Grammar"
+[_mm]: https://mat.uab.cat/~masdeu "Marc Masdeu"
+[_wms]: https://www.warwickmaths.com/ "Warwick Maths Society"
+[_tv]: https://www2.warwick.ac.uk/about/community/volunteers/volunteering/techvols/ "Technology Volunteers"
 [_gh]: https://github.com/mdave16 "mdave16"
 [_ghp]: https://mdave16.github.io/ "My website"
 [_moz]: https://www.mozillafestival.org/ "Mozfest"
 [_sc]: https://scratch.mit.edu/conference/ "Scratch Conf"
-[_xtc]: http://www.extremetuesday.com/ "Extreme Tuesday Club"
+[_xtc]: https://www.extremetuesday.com/ "Extreme Tuesday Club"
 [_shutl]: https://shutl.com "Shutl"
 [_wdofe]: https://warwick.ac.uk/sunion/dofesoc/ "Warwick Duke Of Edinburgh Society"

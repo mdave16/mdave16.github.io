@@ -4,7 +4,7 @@ tags:
   - Warwick
   - Soft Mathematics
 ---
-Writing about web page http://www.pythonchallenge.com/
+Writing about web page https://www.pythonchallenge.com/
 
 When I first learned how to code, it was mostly copy+paste and lots and lots of googling for the correct code.
 
