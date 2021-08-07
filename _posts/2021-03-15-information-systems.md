@@ -68,3 +68,50 @@ system which you have not found yet which gathers that information?
 If you have better names for any of the things I am talking about, or want to discuss them just leave me a message and
 some way of contacting you. Also if you know anyone who has written about this and already explored these topics, then
 give me a shout, I'd love to read up on this. 
+
+This is a follow-up post on 'Information Systems'. In order to think about the different systems available to us and
+their pros and cons. But rather, we can think of this as a data problem.
+
+Imagine having lots of different databases, each database has a cost of retrieving information based on various factors,
+and there is a cost to lookup which tables are in which database. We are trying to minimise the total cost of retrieving
+information from the system. With the added requirement that access should be role based.
+
+Now the problem should be simpler to solve and think about, but before we do, I want to convince you that this is the
+correct problem to solve.
+
+Consider git commit logs, or code, or jira, or any other system mentioned in the previous post. Ultimately, this is a
+datasource, that can be edited and read from. For this reason, I'm going to treat them like databases. Let's take code
+as an example, to see what I mean by the costs.
+
+The cost of looking up information from the code is how fast it takes a developer to find information they are after
+within the code. If a team places high emphasis on readable code, it is to lower this cost, as much as possible. The
+reason we use design patterns and not spaghetti code is purely to make the code as easy as it could be to read, and
+lower the cost of looking up information from it. The information is generally valuable.
+
+What is valuable information? I'm still not completely certain, and information which is valuable to me as an engineer
+is maybe less valuable to a product manager, or a manager. I consider value to be a mixture of the following:
+
+- reliability, how likely is this information going to be correct
+- referenciability, can this information lead me to other information
+
+I personally place the most emphasis on reliability and less on referenciability. Something which references the
+reliable information is less valuable than the reliable information itself. Each layer of reference, makes it less
+valuable.
+
+Hopefully now, you are on board with treating this as a data problem. We have some statements which we know from common
+sense and engineering practices.
+
+- The fewer indicies in a datasource, the easier search is. Ultimately, we are iterating over all indicies and filtering
+  out as much as possible. The less in each datasource the faster search is.
+- Writing data to multiple data sources without a multiple-update system setup leads to inconsistencies of data, and
+  then it becomes hard to know which data is correct.
+- Having data relevant to a role being in the datasources that that role can access is good. (Think about replacing role
+  with an application to see if this makes sense from an architecture standpoint)
+- Giving structure to the data makes it easier to search, but this also imposes some standard which may be hard to
+  change (think of a select from a structured table vs finding something from a document store)
+
+Despite knowing these and probably more rules about data management, we often forget when it comes to these information
+systems. We often put all our information in an unstructured brain dump in at least one central system, but also write
+the same information in other systems. Perhaps after finishing a project, someone will write a summary in the readme
+file, another brain dump in confluence and yet another in a recorded meeting. Sure enough the third is static and won't
+be subject to edits, but it is not going to keep up with the project, and will be the slowest to gain information from.
