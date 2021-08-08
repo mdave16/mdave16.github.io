@@ -53,7 +53,7 @@ Each system has a few facets, some of the important ones are:
 
 Reliability is the main facet, I can't think of any scenario in which it is bad. Similarly having low/no maintainence is ideal. Similarly still, having good searchability in the tool is ideal. For these three, it's very clear what you want from them.
 
-Something which references the reliable information is less valuable than the reliable information itself. Similar to history/journalism where a second hand testimony is less valuable than a third-hand testimony.
+Something which references the reliable information is less valuable than the reliable information itself. Similar to history/journalism where a second hand testimony is more valuable than a third-hand testimony.
 Each layer of reference, makes it less valuable.
 Indeed sometimes having referenciability at all can make other systems less valuable.
 Consider the relationship between code and code comments. For a while, people insisted comments added readability to the code, and the comments referenced the code, effectively sharing the information across two systems.
