@@ -4,7 +4,7 @@ title: Mayur Dave
 
 # Hey!
 
-I'm Mayur Dave and I am a polyglot software engineer at eBay. I enjoy mathematics, hiking, and board games. I have my old maths notes available online on this website. [Reach out](contact "Contact me") if there is anything
+I'm Mayur Dave and I am a polyglot software engineer at Ki Insurance. I enjoy mathematics, hiking, and board games. I have my old maths notes available online on this website. [Reach out](contact "Contact me") if there is anything
 you want up! You can also ask about coding and teaching.
 
 Here are some of the things I'm currently working on:
