@@ -12,7 +12,6 @@ Here are some of the things I'm currently working on:
 - [Tic Tac Toe](tic-tac-toe.html)
 - [Tic Tac Tic Tac Toe](tic-tac-tic-tac-toe.html "Ultimate Tic Tac Toe")
 - [Blog](blog.html "Personal Blog")
-- [Warwick Blog](https://blogs.warwick.ac.uk/mdave/ "Old blog from uni, I plan to deprecate this soon")
 - [cryptography](https://mdave16.github.io/cryptography "Visualisation of basic ciphers")
 
 Give me [feedback](contact "Contact me") if there is anything wrong, or if you
