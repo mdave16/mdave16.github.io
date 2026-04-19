@@ -20,8 +20,8 @@ disableKinds:
 ignoreErrors:
   - error-disable-taxonomy
 permalinks:
-  blog: /:slug/
-  tags: /blog/:slug
+  blog: /blog/:slug/
+  tags: /blog/tags/:slug
 params:
   description: 'Hugo + Bear = :heart:'
   # The "description" of your website. This is used in the meta data of your generated html.
@@ -52,6 +52,10 @@ params:
   # for details. An example TOML config that uses [ISO
   # 8601](https://en.wikipedia.org/wiki/ISO_8601) format:
 markup:
+  goldmark:
+    renderer:
+      # Needed for migrated Jekyll content that uses inline HTML like <img>.
+      unsafe: true
   # Configure markup highlighter to match "Bearblog" aesthetics, see
   # https://gohugo.io/configuration/markup/#highlight
   highlight:
